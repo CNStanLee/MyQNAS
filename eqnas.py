@@ -601,6 +601,7 @@ class MultiObjectiveGeneticSearcher:
         w_robust: float = 0.3,
         w_complexity: float = 0.2,
         max_depth: int = 50,
+        selection_mode: str = 'multi_objective',
     ):
         self.gene_choice = gene_choice
         self.gene_len = len(gene_choice)
@@ -617,19 +618,48 @@ class MultiObjectiveGeneticSearcher:
         self.w_robust = w_robust
         self.w_complexity = w_complexity
         self.max_depth = max_depth
+        self.selection_mode = selection_mode
 
         self.population = []
         self.pareto_front = []
         self.best_result = None
+        self.all_results = []
+        self.best_history = []
+        self.eval_counts = []
+        self._eval_cache = {}
 
-    def random_sample(self, n: int) -> list:
+    @staticmethod
+    def _gene_key(gene: list) -> tuple:
+        return tuple(gene)
+
+    def random_sample(self, n: int, exclude: Optional[set] = None) -> list:
+        exclude = set() if exclude is None else set(exclude)
         population = []
-        for _ in range(n):
+        while len(population) < n:
             gene = []
             for k in range(self.gene_len):
                 gene.append(random.choice(self.gene_choice[k]))
+            key = self._gene_key(gene)
+            if key in exclude:
+                continue
             population.append(gene)
+            exclude.add(key)
         return population
+
+    def _dedup_and_fill_population(self, population: list) -> list:
+        unique = []
+        seen = set()
+        for gene in population:
+            key = self._gene_key(gene)
+            if key in seen:
+                continue
+            unique.append(gene)
+            seen.add(key)
+        if len(unique) < self.population_size:
+            unique.extend(
+                self.random_sample(self.population_size - len(unique), exclude=seen)
+            )
+        return unique[:self.population_size]
 
     def mutate(self, gene: list) -> list:
         mutated = []
@@ -698,26 +728,122 @@ class MultiObjectiveGeneticSearcher:
         """Evaluate all genes in the population."""
         results = []
         for gene in tqdm.tqdm(population, desc="Evaluating population"):
-            result = multi_objective_fitness(
-                self.model, gene, self.dataflow_split, self.device,
-                self.w_acc, self.w_robust, self.w_complexity, self.max_depth,
-            )
-            results.append(result)
+            key = self._gene_key(gene)
+            if key not in self._eval_cache:
+                self._eval_cache[key] = multi_objective_fitness(
+                    self.model, gene, self.dataflow_split, self.device,
+                    self.w_acc, self.w_robust, self.w_complexity, self.max_depth,
+                )
+            results.append(copy.deepcopy(self._eval_cache[key]))
         return results
 
+    @staticmethod
+    def crowding_distance(results: list, front_indices: list) -> Dict[int, float]:
+        """
+        Compute NSGA-II crowding distance for solutions on one front.
+        Objectives: accuracy (max), robustness (max), -depth (min depth = max -depth).
+        """
+        if len(front_indices) <= 2:
+            return {i: float('inf') for i in front_indices}
+        objectives = ['accuracy', 'robustness']  # maximise
+        cd = {i: 0.0 for i in front_indices}
+        for obj in objectives:
+            sorted_idx = sorted(front_indices, key=lambda i: results[i][obj])
+            cd[sorted_idx[0]] = float('inf')
+            cd[sorted_idx[-1]] = float('inf')
+            obj_range = results[sorted_idx[-1]][obj] - results[sorted_idx[0]][obj]
+            if obj_range < 1e-12:
+                continue
+            for k in range(1, len(sorted_idx) - 1):
+                cd[sorted_idx[k]] += (results[sorted_idx[k + 1]][obj]
+                                      - results[sorted_idx[k - 1]][obj]) / obj_range
+        # depth: minimise → sort ascending, boundary = inf
+        sorted_d = sorted(front_indices, key=lambda i: results[i]['depth'])
+        cd[sorted_d[0]] = float('inf')
+        cd[sorted_d[-1]] = float('inf')
+        d_range = results[sorted_d[-1]]['depth'] - results[sorted_d[0]]['depth']
+        if d_range > 1e-12:
+            for k in range(1, len(sorted_d) - 1):
+                cd[sorted_d[k]] += (results[sorted_d[k + 1]]['depth']
+                                    - results[sorted_d[k - 1]]['depth']) / d_range
+        return cd
+
     def select_parents(self, results: list, population: list) -> list:
-        """Select parents using non-dominated sorting + fitness."""
+        """
+        Select parents from evaluated candidates.
+        `fitness` mode uses scalar ranking; otherwise use NSGA-II-style
+        non-dominated sorting and crowding distance.
+        """
+        if self.selection_mode == 'fitness':
+            ranked = sorted(
+                zip(results, population),
+                key=lambda pair: pair[0]['fitness'],
+                reverse=True,
+            )
+            return [copy.deepcopy(gene) for _, gene in ranked[:self.parent_size]]
+
         fronts = self.non_dominated_sort(results)
         parents = []
         for front in fronts:
             if len(parents) >= self.parent_size:
                 break
-            # Sort within front by combined fitness
-            front_sorted = sorted(front, key=lambda i: -results[i]['fitness'])
+            cd = self.crowding_distance(results, front)
+            # Sort by crowding distance (descending) to maintain diversity
+            front_sorted = sorted(front, key=lambda i: -cd[i])
             for idx in front_sorted:
                 if len(parents) < self.parent_size:
                     parents.append(population[idx])
         return parents
+
+    def _generate_unseen_population(self, parents: list, seen_keys: set) -> list:
+        """
+        Build the next population using only unseen genes so that the search
+        budget is counted in unique evaluations rather than repeated cache hits.
+        """
+        if not parents:
+            return self.random_sample(self.population_size, exclude=seen_keys)
+
+        next_population = []
+        next_seen = set()
+
+        def maybe_add(gene: list) -> bool:
+            key = self._gene_key(gene)
+            if key in seen_keys or key in next_seen:
+                return False
+            next_population.append(gene)
+            next_seen.add(key)
+            return True
+
+        attempts = 0
+        max_attempts = max(200, self.population_size * 80)
+
+        while len(next_population) < self.mutation_size and attempts < max_attempts:
+            attempts += 1
+            maybe_add(self.mutate(random.choice(parents)))
+
+        while (len(next_population) < self.mutation_size + self.crossover_size
+               and len(next_population) < self.population_size
+               and attempts < max_attempts):
+            attempts += 1
+            if len(parents) >= 2:
+                pa, pb = random.sample(parents, 2)
+                maybe_add(self.crossover(pa, pb))
+            else:
+                maybe_add(self.mutate(parents[0]))
+
+        while len(next_population) < self.population_size and attempts < max_attempts:
+            attempts += 1
+            gene = [random.choice(self.gene_choice[k]) for k in range(self.gene_len)]
+            maybe_add(gene)
+
+        if len(next_population) < self.population_size:
+            next_population.extend(
+                self.random_sample(
+                    self.population_size - len(next_population),
+                    exclude=seen_keys.union(next_seen),
+                )
+            )
+        return next_population[:self.population_size]
 
     def run_search(self) -> Tuple[dict, list]:
         """
@@ -726,12 +852,12 @@ class MultiObjectiveGeneticSearcher:
         Returns:
             (best_result, pareto_front): best single result and the full Pareto front.
         """
-        initial_size = self.parent_size + self.mutation_size + self.crossover_size
-        self.population = self.random_sample(initial_size)
-
+        self.population = self.random_sample(self.population_size)
         all_results = []
+        seen_keys = set()
 
         for iteration in range(self.n_iterations):
+            self.population = self._dedup_and_fill_population(self.population)
             logger.info(f"\n{'='*60}")
             logger.info(f"[EQNAS Search] Iteration {iteration+1}/{self.n_iterations}, "
                          f"population size = {len(self.population)}")
@@ -739,38 +865,42 @@ class MultiObjectiveGeneticSearcher:
 
             results = self.evaluate_population(self.population)
 
-            # Keep track of all results seen
-            all_results.extend(results)
+            # Keep track of all UNIQUE results seen across the search.
+            for gene, result in zip(self.population, results):
+                key = self._gene_key(gene)
+                if key in seen_keys:
+                    continue
+                seen_keys.add(key)
+                all_results.append(copy.deepcopy(result))
 
-            # Select parents
-            parents = self.select_parents(results, self.population)
+            # Select parents from the full evaluated archive.
+            archive_population = [r['gene'] for r in all_results]
+            parents = self.select_parents(all_results, archive_population)
 
-            # Find current best
+            # Find generation best and best-so-far.
             best_idx = max(range(len(results)), key=lambda i: results[i]['fitness'])
-            current_best = results[best_idx]
+            gen_best = results[best_idx]
+            current_best = max(all_results, key=lambda r: r['fitness'])
             logger.info(
-                f"  Best this iter: fitness={current_best['fitness']:.4f}, "
-                f"acc={current_best['accuracy']:.4f}, "
-                f"robustness={current_best['robustness']:.4f}, "
-                f"depth={current_best['depth']}"
+                f"  Best this iter: fitness={gen_best['fitness']:.4f}, "
+                f"acc={gen_best['accuracy']:.4f}, "
+                f"robustness={gen_best['robustness']:.4f}, "
+                f"depth={gen_best['depth']} | "
+                f"archive={len(all_results)} unique"
             )
+            self.best_history.append(copy.deepcopy(current_best))
+            self.eval_counts.append(len(all_results))
 
             if self.best_result is None or current_best['fitness'] > self.best_result['fitness']:
-                self.best_result = current_best
+                self.best_result = copy.deepcopy(current_best)
 
-            # Breed next generation
-            mutants = [self.mutate(random.choice(parents)) for _ in range(self.mutation_size)]
-            crossovers = []
-            for _ in range(self.crossover_size):
-                p = random.sample(parents, min(2, len(parents)))
-                if len(p) == 2:
-                    crossovers.append(self.crossover(p[0], p[1]))
-                else:
-                    crossovers.append(self.mutate(p[0]))
-
-            self.population = parents + mutants + crossovers
+            # Breed the next generation from elites without re-spending budget
+            # on already-evaluated genes.
+            if iteration < self.n_iterations - 1:
+                self.population = self._generate_unseen_population(parents, seen_keys)
 
         # Compute final Pareto front from all evaluated solutions
+        self.all_results = [copy.deepcopy(r) for r in all_results]
         fronts = self.non_dominated_sort(all_results)
         if fronts:
             self.pareto_front = [all_results[i] for i in fronts[0]]

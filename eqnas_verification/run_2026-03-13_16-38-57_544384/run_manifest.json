@@ -1,0 +1,21 @@
+{
+  "run_timestamp": "2026-03-13_16-38-57_544384",
+  "output_dir": "eqnas_verification/run_2026-03-13_16-38-57_544384",
+  "runtime_seconds": 1179.006496,
+  "runtime_hms": "0:19:39.006496",
+  "verification_all_pass": true,
+  "artifacts": [
+    "exp1_ramanujan_init.png",
+    "exp1_metrics.json",
+    "exp2_noise_robustness.png",
+    "exp2_metrics_iter.json",
+    "exp3_multi_obj.png",
+    "exp3_metrics.json",
+    "exp4_supernet_vs_subnets.png",
+    "exp5_all_subnet_structures.png",
+    "exp5_structure_graph_all_candidates.png",
+    "exp5_all_candidate_circuits.pdf",
+    "all_candidate_circuits_mpl/manifest.json",
+    "verification_assertions.json"
+  ]
+}

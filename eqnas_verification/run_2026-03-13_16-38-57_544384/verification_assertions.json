@@ -1,0 +1,28 @@
+{
+  "exp1": {
+    "pass": true,
+    "ours_zero_shot_auc": 0.4806296296296296,
+    "best_zero_shot_auc": 0.4806296296296296,
+    "ours_fidelity_auc": 0.9675346884539834,
+    "best_fidelity_auc": 0.9675346884539834
+  },
+  "exp2": {
+    "pass": true,
+    "ours_tail_accuracy": 0.5377037037037038,
+    "best_tail_accuracy": 0.5377037037037038,
+    "ours_worst_tail_accuracy": 0.49644444444444447,
+    "best_worst_tail_accuracy": 0.49644444444444447
+  },
+  "exp3": {
+    "pass": true,
+    "margin_best_required": 0.001,
+    "margin_auc_required": 0.001,
+    "ours_best_fitness_mean": 0.9105452462772051,
+    "single_best_fitness_mean": 0.9054543454345435,
+    "ours_search_auc_mean": 0.8599593992618048,
+    "single_search_auc_mean": 0.8523528782107314,
+    "delta_best_fitness": 0.0050909008426616165,
+    "delta_search_auc": 0.0076065210510734005
+  },
+  "all_pass": true
+}

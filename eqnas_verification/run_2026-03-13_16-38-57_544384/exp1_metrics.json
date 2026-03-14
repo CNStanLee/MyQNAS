@@ -1,0 +1,991 @@
+{
+  "reference_accuracy_mean": 0.6333333333333333,
+  "reference_accuracy_std": 0.0,
+  "benchmark_seeds": [
+    42,
+    53,
+    65
+  ],
+  "sparsity_levels": [
+    0.45,
+    0.5,
+    0.53,
+    0.56,
+    0.59,
+    0.62,
+    0.65,
+    0.7,
+    0.75
+  ],
+  "transition_levels": [
+    0.5,
+    0.53,
+    0.56,
+    0.59,
+    0.62
+  ],
+  "stress_zero_shot_auc": {
+    "L1": 0.29150000000000004,
+    "PhaseL1": 0.2861111111111111,
+    "Ramanujan-Global (No PhaseSq)": 0.3473518518518519,
+    "Ramanujan Hybrid (Ours)": 0.4806296296296296
+  },
+  "stress_fidelity_auc": {
+    "L1": 0.9248550652398002,
+    "PhaseL1": 0.9259684173564117,
+    "Ramanujan-Global (No PhaseSq)": 0.9588067994658593,
+    "Ramanujan Hybrid (Ours)": 0.9675346884539834
+  },
+  "transition_stability": {
+    "L1": 0.12666666666666673,
+    "PhaseL1": 0.14666666666666667,
+    "Ramanujan-Global (No PhaseSq)": 0.3144444444444444,
+    "Ramanujan Hybrid (Ours)": 0.054444444444444295
+  },
+  "metrics": {
+    "L1": {
+      "0.45": {
+        "fidelity_mean": 0.9923368245363235,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.5633333333333334,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.8894736842105264,
+        "actual_sparsity_mean": 0.4444444444444444,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9923368245363235,
+            0.9923368245363235,
+            0.9923368245363235
+          ],
+          "zs_acc": [
+            0.5633333333333334,
+            0.5633333333333334,
+            0.5633333333333334
+          ],
+          "actual_sp": [
+            0.4444444444444444,
+            0.4444444444444444,
+            0.4444444444444444
+          ]
+        }
+      },
+      "0.50": {
+        "fidelity_mean": 0.9647231934467951,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.36000000000000004,
+        "zero_shot_accuracy_std": 5.551115123125783e-17,
+        "zero_shot_retention_mean": 0.568421052631579,
+        "actual_sparsity_mean": 0.5,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9647231934467951,
+            0.9647231934467951,
+            0.9647231934467951
+          ],
+          "zs_acc": [
+            0.36,
+            0.36,
+            0.36
+          ],
+          "actual_sp": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "0.53": {
+        "fidelity_mean": 0.9366328366597494,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.31,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.48947368421052634,
+        "actual_sparsity_mean": 0.5277777777777778,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9366328366597494,
+            0.9366328366597494,
+            0.9366328366597494
+          ],
+          "zs_acc": [
+            0.31,
+            0.31,
+            0.31
+          ],
+          "actual_sp": [
+            0.5277777777777778,
+            0.5277777777777778,
+            0.5277777777777778
+          ]
+        }
+      },
+      "0.56": {
+        "fidelity_mean": 0.9364204053084055,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.30333333333333334,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.4789473684210527,
+        "actual_sparsity_mean": 0.5555555555555556,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9364204053084055,
+            0.9364204053084055,
+            0.9364204053084055
+          ],
+          "zs_acc": [
+            0.30333333333333334,
+            0.30333333333333334,
+            0.30333333333333334
+          ],
+          "actual_sp": [
+            0.5555555555555556,
+            0.5555555555555556,
+            0.5555555555555556
+          ]
+        }
+      },
+      "0.59": {
+        "fidelity_mean": 0.9153268257776896,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.2333333333333333,
+        "zero_shot_accuracy_std": 2.7755575615628914e-17,
+        "zero_shot_retention_mean": 0.3684210526315789,
+        "actual_sparsity_mean": 0.5833333333333334,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9153268257776896,
+            0.9153268257776896,
+            0.9153268257776896
+          ],
+          "zs_acc": [
+            0.23333333333333334,
+            0.23333333333333334,
+            0.23333333333333334
+          ],
+          "actual_sp": [
+            0.5833333333333334,
+            0.5833333333333334,
+            0.5833333333333334
+          ]
+        }
+      },
+      "0.62": {
+        "fidelity_mean": 0.9065698176622391,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.26,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.41052631578947374,
+        "actual_sparsity_mean": 0.625,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9065698176622391,
+            0.9065698176622391,
+            0.9065698176622391
+          ],
+          "zs_acc": [
+            0.26,
+            0.26,
+            0.26
+          ],
+          "actual_sp": [
+            0.625,
+            0.625,
+            0.625
+          ]
+        }
+      },
+      "0.65": {
+        "fidelity_mean": 0.8983354806900025,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.24,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.37894736842105264,
+        "actual_sparsity_mean": 0.6527777777777778,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.8983354806900025,
+            0.8983354806900025,
+            0.8983354806900025
+          ],
+          "zs_acc": [
+            0.24,
+            0.24,
+            0.24
+          ],
+          "actual_sp": [
+            0.6527777777777778,
+            0.6527777777777778,
+            0.6527777777777778
+          ]
+        }
+      },
+      "0.70": {
+        "fidelity_mean": 0.8972051956256232,
+        "fidelity_std": 1.1102230246251565e-16,
+        "zero_shot_accuracy_mean": 0.22,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.3473684210526316,
+        "actual_sparsity_mean": 0.6944444444444443,
+        "actual_sparsity_std": 1.1102230246251565e-16,
+        "seed_values": {
+          "fidelity": [
+            0.8972051956256231,
+            0.8972051956256231,
+            0.8972051956256231
+          ],
+          "zs_acc": [
+            0.22,
+            0.22,
+            0.22
+          ],
+          "actual_sp": [
+            0.6944444444444444,
+            0.6944444444444444,
+            0.6944444444444444
+          ]
+        }
+      },
+      "0.75": {
+        "fidelity_mean": 0.896679825981458,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.20666666666666667,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.3263157894736842,
+        "actual_sparsity_mean": 0.75,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.896679825981458,
+            0.896679825981458,
+            0.896679825981458
+          ],
+          "zs_acc": [
+            0.20666666666666667,
+            0.20666666666666667,
+            0.20666666666666667
+          ],
+          "actual_sp": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      }
+    },
+    "PhaseL1": {
+      "0.45": {
+        "fidelity_mean": 0.9878928969303767,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.5166666666666667,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.8157894736842106,
+        "actual_sparsity_mean": 0.4444444444444444,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9878928969303767,
+            0.9878928969303767,
+            0.9878928969303767
+          ],
+          "zs_acc": [
+            0.5166666666666667,
+            0.5166666666666667,
+            0.5166666666666667
+          ],
+          "actual_sp": [
+            0.4444444444444444,
+            0.4444444444444444,
+            0.4444444444444444
+          ]
+        }
+      },
+      "0.50": {
+        "fidelity_mean": 0.9598179533084233,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.31333333333333335,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.4947368421052632,
+        "actual_sparsity_mean": 0.5,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9598179533084233,
+            0.9598179533084233,
+            0.9598179533084233
+          ],
+          "zs_acc": [
+            0.31333333333333335,
+            0.31333333333333335,
+            0.31333333333333335
+          ],
+          "actual_sp": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "0.53": {
+        "fidelity_mean": 0.9586949054400126,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.35333333333333333,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.5578947368421053,
+        "actual_sparsity_mean": 0.5277777777777778,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9586949054400126,
+            0.9586949054400126,
+            0.9586949054400126
+          ],
+          "zs_acc": [
+            0.35333333333333333,
+            0.35333333333333333,
+            0.35333333333333333
+          ],
+          "actual_sp": [
+            0.5277777777777778,
+            0.5277777777777778,
+            0.5277777777777778
+          ]
+        }
+      },
+      "0.56": {
+        "fidelity_mean": 0.9302178549766541,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.32,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.5052631578947369,
+        "actual_sparsity_mean": 0.5555555555555556,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9302178549766541,
+            0.9302178549766541,
+            0.9302178549766541
+          ],
+          "zs_acc": [
+            0.32,
+            0.32,
+            0.32
+          ],
+          "actual_sp": [
+            0.5555555555555556,
+            0.5555555555555556,
+            0.5555555555555556
+          ]
+        }
+      },
+      "0.59": {
+        "fidelity_mean": 0.9314947797854741,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.28,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.4421052631578948,
+        "actual_sparsity_mean": 0.5833333333333334,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9314947797854741,
+            0.9314947797854741,
+            0.9314947797854741
+          ],
+          "zs_acc": [
+            0.28,
+            0.28,
+            0.28
+          ],
+          "actual_sp": [
+            0.5833333333333334,
+            0.5833333333333334,
+            0.5833333333333334
+          ]
+        }
+      },
+      "0.62": {
+        "fidelity_mean": 0.913301173845927,
+        "fidelity_std": 1.1102230246251565e-16,
+        "zero_shot_accuracy_mean": 0.20666666666666667,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.3263157894736842,
+        "actual_sparsity_mean": 0.625,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9133011738459269,
+            0.9133011738459269,
+            0.9133011738459269
+          ],
+          "zs_acc": [
+            0.20666666666666667,
+            0.20666666666666667,
+            0.20666666666666667
+          ],
+          "actual_sp": [
+            0.625,
+            0.625,
+            0.625
+          ]
+        }
+      },
+      "0.65": {
+        "fidelity_mean": 0.9038944820562999,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.2333333333333333,
+        "zero_shot_accuracy_std": 2.7755575615628914e-17,
+        "zero_shot_retention_mean": 0.3684210526315789,
+        "actual_sparsity_mean": 0.6527777777777778,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9038944820562999,
+            0.9038944820562999,
+            0.9038944820562999
+          ],
+          "zs_acc": [
+            0.23333333333333334,
+            0.23333333333333334,
+            0.23333333333333334
+          ],
+          "actual_sp": [
+            0.6527777777777778,
+            0.6527777777777778,
+            0.6527777777777778
+          ]
+        }
+      },
+      "0.70": {
+        "fidelity_mean": 0.8871125874916711,
+        "fidelity_std": 1.1102230246251565e-16,
+        "zero_shot_accuracy_mean": 0.21666666666666667,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.34210526315789475,
+        "actual_sparsity_mean": 0.6944444444444443,
+        "actual_sparsity_std": 1.1102230246251565e-16,
+        "seed_values": {
+          "fidelity": [
+            0.8871125874916712,
+            0.8871125874916712,
+            0.8871125874916712
+          ],
+          "zs_acc": [
+            0.21666666666666667,
+            0.21666666666666667,
+            0.21666666666666667
+          ],
+          "actual_sp": [
+            0.6944444444444444,
+            0.6944444444444444,
+            0.6944444444444444
+          ]
+        }
+      },
+      "0.75": {
+        "fidelity_mean": 0.8871125829219818,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.21666666666666667,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.34210526315789475,
+        "actual_sparsity_mean": 0.75,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.8871125829219818,
+            0.8871125829219818,
+            0.8871125829219818
+          ],
+          "zs_acc": [
+            0.21666666666666667,
+            0.21666666666666667,
+            0.21666666666666667
+          ],
+          "actual_sp": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      }
+    },
+    "Ramanujan-Global (No PhaseSq)": {
+      "0.45": {
+        "fidelity_mean": 0.983304046789805,
+        "fidelity_std": 1.1102230246251565e-16,
+        "zero_shot_accuracy_mean": 0.6333333333333333,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 1.0,
+        "actual_sparsity_mean": 0.4444444444444444,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9833040467898051,
+            0.9833040467898051,
+            0.9833040467898051
+          ],
+          "zs_acc": [
+            0.6333333333333333,
+            0.6333333333333333,
+            0.6333333333333333
+          ],
+          "actual_sp": [
+            0.4444444444444444,
+            0.4444444444444444,
+            0.4444444444444444
+          ]
+        }
+      },
+      "0.50": {
+        "fidelity_mean": 0.9786012266741858,
+        "fidelity_std": 0.005081560013685806,
+        "zero_shot_accuracy_mean": 0.5211111111111112,
+        "zero_shot_accuracy_std": 0.14927809825049337,
+        "zero_shot_retention_mean": 0.8228070175438598,
+        "actual_sparsity_mean": 0.5,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9821944322188695,
+            0.9821944322188695,
+            0.9714148155848186
+          ],
+          "zs_acc": [
+            0.6266666666666667,
+            0.6266666666666667,
+            0.31
+          ],
+          "actual_sp": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "0.53": {
+        "fidelity_mean": 0.9826299285888672,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.5333333333333333,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.8421052631578948,
+        "actual_sparsity_mean": 0.5277777777777778,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9826299285888672,
+            0.9826299285888672,
+            0.9826299285888672
+          ],
+          "zs_acc": [
+            0.5333333333333333,
+            0.5333333333333333,
+            0.5333333333333333
+          ],
+          "actual_sp": [
+            0.5277777777777778,
+            0.5277777777777778,
+            0.5277777777777778
+          ]
+        }
+      },
+      "0.56": {
+        "fidelity_mean": 0.9667308443122439,
+        "fidelity_std": 0.0022851494265370797,
+        "zero_shot_accuracy_mean": 0.28777777777777774,
+        "zero_shot_accuracy_std": 0.028327886186626575,
+        "zero_shot_retention_mean": 0.45438596491228067,
+        "actual_sparsity_mean": 0.5555555555555556,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9676626125971476,
+            0.9635850874582926,
+            0.9689448328812917
+          ],
+          "zs_acc": [
+            0.27666666666666667,
+            0.26,
+            0.32666666666666666
+          ],
+          "actual_sp": [
+            0.5555555555555556,
+            0.5555555555555556,
+            0.5555555555555556
+          ]
+        }
+      },
+      "0.59": {
+        "fidelity_mean": 0.9629180059168073,
+        "fidelity_std": 0.0032422907365747735,
+        "zero_shot_accuracy_mean": 0.25000000000000006,
+        "zero_shot_accuracy_std": 0.02867441755680876,
+        "zero_shot_retention_mean": 0.3947368421052633,
+        "actual_sparsity_mean": 0.5833333333333334,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9583726960420609,
+            0.9646674090623856,
+            0.9657139126459757
+          ],
+          "zs_acc": [
+            0.21666666666666667,
+            0.2866666666666667,
+            0.24666666666666667
+          ],
+          "actual_sp": [
+            0.5833333333333334,
+            0.5833333333333334,
+            0.5833333333333334
+          ]
+        }
+      },
+      "0.62": {
+        "fidelity_mean": 0.9640135683616003,
+        "fidelity_std": 0.0023360173294314068,
+        "zero_shot_accuracy_mean": 0.2188888888888889,
+        "zero_shot_accuracy_std": 0.03467663674294941,
+        "zero_shot_retention_mean": 0.3456140350877194,
+        "actual_sparsity_mean": 0.625,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9629837185144424,
+            0.9672469528516133,
+            0.961810033718745
+          ],
+          "zs_acc": [
+            0.24666666666666667,
+            0.17,
+            0.24
+          ],
+          "actual_sp": [
+            0.625,
+            0.625,
+            0.625
+          ]
+        }
+      },
+      "0.65": {
+        "fidelity_mean": 0.9633435031440523,
+        "fidelity_std": 0.00019852636105346081,
+        "zero_shot_accuracy_mean": 0.2477777777777778,
+        "zero_shot_accuracy_std": 0.0015713484026367694,
+        "zero_shot_retention_mean": 0.39122807017543865,
+        "actual_sparsity_mean": 0.6527777777777778,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9632031238079071,
+            0.9632031238079071,
+            0.9636242618163426
+          ],
+          "zs_acc": [
+            0.24666666666666667,
+            0.24666666666666667,
+            0.25
+          ],
+          "actual_sp": [
+            0.6527777777777778,
+            0.6527777777777778,
+            0.6527777777777778
+          ]
+        }
+      },
+      "0.70": {
+        "fidelity_mean": 0.9155287376377318,
+        "fidelity_std": 0.0009653899555831328,
+        "zero_shot_accuracy_mean": 0.27111111111111114,
+        "zero_shot_accuracy_std": 0.0911382073529328,
+        "zero_shot_retention_mean": 0.42807017543859655,
+        "actual_sparsity_mean": 0.6944444444444443,
+        "actual_sparsity_std": 1.1102230246251565e-16,
+        "seed_values": {
+          "fidelity": [
+            0.9141634700695673,
+            0.916211371421814,
+            0.916211371421814
+          ],
+          "zs_acc": [
+            0.4,
+            0.20666666666666667,
+            0.20666666666666667
+          ],
+          "actual_sp": [
+            0.6944444444444444,
+            0.6944444444444444,
+            0.6944444444444444
+          ]
+        }
+      },
+      "0.75": {
+        "fidelity_mean": 0.9326576872004404,
+        "fidelity_std": 0.019866589935069682,
+        "zero_shot_accuracy_mean": 0.21444444444444444,
+        "zero_shot_accuracy_std": 0.06384781288248284,
+        "zero_shot_retention_mean": 0.3385964912280702,
+        "actual_sparsity_mean": 0.75,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9224129251639048,
+            0.9151238167285919,
+            0.9604363197088241
+          ],
+          "zs_acc": [
+            0.12666666666666668,
+            0.24,
+            0.27666666666666667
+          ],
+          "actual_sp": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      }
+    },
+    "Ramanujan Hybrid (Ours)": {
+      "0.45": {
+        "fidelity_mean": 0.978547501762708,
+        "fidelity_std": 0.0,
+        "zero_shot_accuracy_mean": 0.5833333333333334,
+        "zero_shot_accuracy_std": 0.0,
+        "zero_shot_retention_mean": 0.9210526315789475,
+        "actual_sparsity_mean": 0.4444444444444444,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.978547501762708,
+            0.978547501762708,
+            0.978547501762708
+          ],
+          "zs_acc": [
+            0.5833333333333334,
+            0.5833333333333334,
+            0.5833333333333334
+          ],
+          "actual_sp": [
+            0.4444444444444444,
+            0.4444444444444444,
+            0.4444444444444444
+          ]
+        }
+      },
+      "0.50": {
+        "fidelity_mean": 0.9793696354495154,
+        "fidelity_std": 0.0018357176947559832,
+        "zero_shot_accuracy_mean": 0.58,
+        "zero_shot_accuracy_std": 0.008164965809277268,
+        "zero_shot_retention_mean": 0.9157894736842105,
+        "actual_sparsity_mean": 0.5,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9801059359312058,
+            0.9811574502786,
+            0.9768455201387405
+          ],
+          "zs_acc": [
+            0.57,
+            0.58,
+            0.59
+          ],
+          "actual_sp": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "0.53": {
+        "fidelity_mean": 0.9810058901045058,
+        "fidelity_std": 0.0011198176461885202,
+        "zero_shot_accuracy_mean": 0.59,
+        "zero_shot_accuracy_std": 0.020548046676563275,
+        "zero_shot_retention_mean": 0.9315789473684211,
+        "actual_sparsity_mean": 0.5277777777777778,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9794916309913,
+            0.9821645814180374,
+            0.98136145790418
+          ],
+          "zs_acc": [
+            0.5666666666666667,
+            0.5866666666666667,
+            0.6166666666666667
+          ],
+          "actual_sp": [
+            0.5277777777777778,
+            0.5277777777777778,
+            0.5277777777777778
+          ]
+        }
+      },
+      "0.56": {
+        "fidelity_mean": 0.9766104926003351,
+        "fidelity_std": 0.0013385183907398917,
+        "zero_shot_accuracy_mean": 0.5866666666666666,
+        "zero_shot_accuracy_std": 0.004714045207910321,
+        "zero_shot_retention_mean": 0.9263157894736841,
+        "actual_sparsity_mean": 0.5555555555555556,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9747273470958074,
+            0.9773854235808055,
+            0.9777187071243922
+          ],
+          "zs_acc": [
+            0.58,
+            0.59,
+            0.59
+          ],
+          "actual_sp": [
+            0.5555555555555556,
+            0.5555555555555556,
+            0.5555555555555556
+          ]
+        }
+      },
+      "0.59": {
+        "fidelity_mean": 0.9745473060343001,
+        "fidelity_std": 0.00027910364263319715,
+        "zero_shot_accuracy_mean": 0.5800000000000001,
+        "zero_shot_accuracy_std": 0.004714045207910321,
+        "zero_shot_retention_mean": 0.9157894736842107,
+        "actual_sparsity_mean": 0.5833333333333334,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9743499499559403,
+            0.9743499499559403,
+            0.9749420181910197
+          ],
+          "zs_acc": [
+            0.5833333333333334,
+            0.5833333333333334,
+            0.5733333333333334
+          ],
+          "actual_sp": [
+            0.5833333333333334,
+            0.5833333333333334,
+            0.5833333333333334
+          ]
+        }
+      },
+      "0.62": {
+        "fidelity_mean": 0.9754177095492681,
+        "fidelity_std": 0.002873935999264878,
+        "zero_shot_accuracy_mean": 0.5355555555555557,
+        "zero_shot_accuracy_std": 0.026712922844825116,
+        "zero_shot_retention_mean": 0.8456140350877195,
+        "actual_sparsity_mean": 0.625,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9733855299154918,
+            0.9733855299154918,
+            0.9794820688168208
+          ],
+          "zs_acc": [
+            0.5166666666666667,
+            0.5166666666666667,
+            0.5733333333333334
+          ],
+          "actual_sp": [
+            0.625,
+            0.625,
+            0.625
+          ]
+        }
+      },
+      "0.65": {
+        "fidelity_mean": 0.9725003835890028,
+        "fidelity_std": 0.004196405575570902,
+        "zero_shot_accuracy_mean": 0.3833333333333333,
+        "zero_shot_accuracy_std": 0.16027753706895076,
+        "zero_shot_retention_mean": 0.6052631578947368,
+        "actual_sparsity_mean": 0.6527777777777778,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9665657699108123,
+            0.975467690428098,
+            0.975467690428098
+          ],
+          "zs_acc": [
+            0.15666666666666668,
+            0.49666666666666665,
+            0.49666666666666665
+          ],
+          "actual_sp": [
+            0.6527777777777778,
+            0.6527777777777778,
+            0.6527777777777778
+          ]
+        }
+      },
+      "0.70": {
+        "fidelity_mean": 0.9456129905250337,
+        "fidelity_std": 0.017086334517403753,
+        "zero_shot_accuracy_mean": 0.33,
+        "zero_shot_accuracy_std": 0.1596524001977073,
+        "zero_shot_retention_mean": 0.5210526315789474,
+        "actual_sparsity_mean": 0.6944444444444443,
+        "actual_sparsity_std": 1.1102230246251565e-16,
+        "seed_values": {
+          "fidelity": [
+            0.9267473008235295,
+            0.9419699585437775,
+            0.9681217122077942
+          ],
+          "zs_acc": [
+            0.11333333333333333,
+            0.38333333333333336,
+            0.49333333333333335
+          ],
+          "actual_sp": [
+            0.6944444444444444,
+            0.6944444444444444,
+            0.6944444444444444
+          ]
+        }
+      },
+      "0.75": {
+        "fidelity_mean": 0.9285530702273052,
+        "fidelity_std": 0.014391357990858424,
+        "zero_shot_accuracy_mean": 0.23222222222222222,
+        "zero_shot_accuracy_std": 0.006849348892187751,
+        "zero_shot_retention_mean": 0.3666666666666667,
+        "actual_sparsity_mean": 0.75,
+        "actual_sparsity_std": 0.0,
+        "seed_values": {
+          "fidelity": [
+            0.9203188101450602,
+            0.9487889625628789,
+            0.9165514379739761
+          ],
+          "zs_acc": [
+            0.23333333333333334,
+            0.22333333333333333,
+            0.24
+          ],
+          "actual_sp": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      }
+    }
+  }
+}

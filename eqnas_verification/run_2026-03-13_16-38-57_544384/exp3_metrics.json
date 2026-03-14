@@ -1,0 +1,8179 @@
+{
+  "benchmark_seeds": [
+    42,
+    53,
+    65
+  ],
+  "budget": {
+    "population_size": 18,
+    "n_iterations": 6,
+    "unique_evals_per_run": 108
+  },
+  "supernet": {
+    "gene": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      3
+    ],
+    "accuracy": 0.6666666666666666,
+    "robustness": 1.0,
+    "depth": 15,
+    "total_gates": 24,
+    "depth_score": 0.7,
+    "fitness": 0.8733333333333333,
+    "calibrated_epochs": 3,
+    "pre_calibration": {
+      "accuracy": 0.6333333333333333,
+      "robustness": 0.8421052631578948,
+      "depth": 15,
+      "fitness": 0.7719298245614036
+    }
+  },
+  "benchmark_records": {
+    "Random Search": {
+      "best_fitness": [
+        0.9043885918003566,
+        0.9046666666666667,
+        0.904
+      ],
+      "search_auc": [
+        0.848606456724104,
+        0.8533081798375917,
+        0.8515555555555557
+      ],
+      "non_dominated_count": [
+        18,
+        15,
+        15
+      ],
+      "hypervolume": [
+        0.5549166666666666,
+        0.54825,
+        0.5641666666666667
+      ],
+      "unique_evals": [
+        108,
+        108,
+        108
+      ],
+      "supernet_dominators": [
+        0,
+        0,
+        0
+      ]
+    },
+    "Single-Obj Genetic": {
+      "best_fitness": [
+        0.902,
+        0.9076963696369637,
+        0.9066666666666667
+      ],
+      "search_auc": [
+        0.8484099555460595,
+        0.8547388729068985,
+        0.8539098061792362
+      ],
+      "non_dominated_count": [
+        25,
+        21,
+        13
+      ],
+      "hypervolume": [
+        0.5726666666666667,
+        0.5715833333333333,
+        0.56025
+      ],
+      "unique_evals": [
+        108,
+        108,
+        108
+      ],
+      "supernet_dominators": [
+        1,
+        2,
+        0
+      ]
+    },
+    "Acc+Complexity Genetic": {
+      "best_fitness": [
+        0.912,
+        0.906,
+        0.9026666666666667
+      ],
+      "search_auc": [
+        0.8566481481481482,
+        0.8534192909487027,
+        0.8509599632356655
+      ],
+      "non_dominated_count": [
+        14,
+        6,
+        14
+      ],
+      "hypervolume": [
+        0.58575,
+        0.5419166666666667,
+        0.5518333333333333
+      ],
+      "unique_evals": [
+        108,
+        108,
+        108
+      ],
+      "supernet_dominators": [
+        1,
+        0,
+        0
+      ]
+    },
+    "Acc+Robustness Genetic": {
+      "best_fitness": [
+        0.8993333333333334,
+        0.9046666666666667,
+        0.9019166666666666
+      ],
+      "search_auc": [
+        0.8477407407407407,
+        0.8533081798375917,
+        0.8508879413740166
+      ],
+      "non_dominated_count": [
+        24,
+        21,
+        23
+      ],
+      "hypervolume": [
+        0.5745833333333333,
+        0.5509166666666667,
+        0.5670833333333334
+      ],
+      "unique_evals": [
+        108,
+        108,
+        108
+      ],
+      "supernet_dominators": [
+        0,
+        2,
+        0
+      ]
+    },
+    "Multi-Obj Genetic (Ours)": {
+      "best_fitness": [
+        0.9123024054982819,
+        0.9106666666666667,
+        0.9086666666666667
+      ],
+      "search_auc": [
+        0.861618938526155,
+        0.8600740740740741,
+        0.8581851851851852
+      ],
+      "non_dominated_count": [
+        13,
+        17,
+        9
+      ],
+      "hypervolume": [
+        0.5715833333333333,
+        0.5836666666666667,
+        0.5790833333333333
+      ],
+      "unique_evals": [
+        108,
+        108,
+        108
+      ],
+      "supernet_dominators": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "canonical_traces": {
+    "Random Search": {
+      "best_curve": [
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8986666666666667,
+        0.8986666666666667,
+        0.8986666666666667,
+        0.8986666666666667,
+        0.8986666666666667,
+        0.8986666666666667,
+        0.8986666666666667,
+        0.8986666666666667,
+        0.8986666666666667,
+        0.8986666666666667,
+        0.9043885918003566,
+        0.9043885918003566
+      ],
+      "eval_counts": [
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90,
+        96,
+        102,
+        108
+      ],
+      "unique_evals": 108
+    },
+    "Single-Obj Genetic": {
+      "best_curve": [
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8975578583765114,
+        0.8975578583765114,
+        0.8975578583765114,
+        0.8975578583765114,
+        0.9003024054982819,
+        0.9003024054982819,
+        0.9003024054982819,
+        0.9003024054982819,
+        0.9003024054982819,
+        0.9003024054982819,
+        0.902
+      ],
+      "eval_counts": [
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90,
+        96,
+        102,
+        108
+      ],
+      "unique_evals": 108
+    },
+    "Acc+Complexity Genetic": {
+      "best_curve": [
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.912,
+        0.912,
+        0.912,
+        0.912,
+        0.912,
+        0.912,
+        0.912,
+        0.912,
+        0.912,
+        0.912,
+        0.912,
+        0.912
+      ],
+      "eval_counts": [
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90,
+        96,
+        102,
+        108
+      ],
+      "unique_evals": 108
+    },
+    "Acc+Robustness Genetic": {
+      "best_curve": [
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.8966666666666667,
+        0.898,
+        0.898,
+        0.898,
+        0.898,
+        0.898,
+        0.898,
+        0.898,
+        0.898,
+        0.898,
+        0.898,
+        0.898,
+        0.8993333333333334
+      ],
+      "eval_counts": [
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90,
+        96,
+        102,
+        108
+      ],
+      "unique_evals": 108
+    },
+    "Multi-Obj Genetic (Ours)": {
+      "best_curve": [
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819,
+        0.9123024054982819
+      ],
+      "eval_counts": [
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72,
+        78,
+        84,
+        90,
+        96,
+        102,
+        108
+      ],
+      "unique_evals": 108
+    }
+  },
+  "canonical_fronts": {
+    "Random Search": [
+      {
+        "gene": [
+          4,
+          3,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9928698752228163,
+        "depth": 4,
+        "total_gates": 9,
+        "depth_score": 0.92,
+        "fitness": 0.9043885918003566
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          3,
+          4,
+          3,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8986666666666667
+      },
+      {
+        "gene": [
+          2,
+          3,
+          1,
+          1,
+          4,
+          1,
+          2
+        ],
+        "accuracy": 0.5633333333333334,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 7,
+        "depth_score": 0.92,
+        "fitness": 0.8966666666666667
+      },
+      {
+        "gene": [
+          4,
+          2,
+          2,
+          3,
+          4,
+          3,
+          2
+        ],
+        "accuracy": 0.6433333333333333,
+        "robustness": 0.9930915371329878,
+        "depth": 7,
+        "total_gates": 11,
+        "depth_score": 0.86,
+        "fitness": 0.8965215889464594
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          3,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9778911564625852,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.8934013605442178
+      },
+      {
+        "gene": [
+          3,
+          2,
+          1,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.64,
+        "robustness": 0.9809027777777778,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.8925416666666667
+      },
+      {
+        "gene": [
+          2,
+          2,
+          2,
+          4,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.61,
+        "robustness": 1.0,
+        "depth": 8,
+        "total_gates": 10,
+        "depth_score": 0.84,
+        "fitness": 0.89
+      },
+      {
+        "gene": [
+          4,
+          2,
+          1,
+          4,
+          1,
+          1,
+          3
+        ],
+        "accuracy": 0.64,
+        "robustness": 0.9965277777777779,
+        "depth": 9,
+        "total_gates": 13,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.8899166666666668
+      },
+      {
+        "gene": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          3
+        ],
+        "accuracy": 0.62,
+        "robustness": 0.9964157706093192,
+        "depth": 8,
+        "total_gates": 16,
+        "depth_score": 0.84,
+        "fitness": 0.8898494623655915
+      },
+      {
+        "gene": [
+          4,
+          1,
+          2,
+          2,
+          1,
+          3,
+          1
+        ],
+        "accuracy": 0.4866666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 5,
+        "depth_score": 0.96,
+        "fitness": 0.8893333333333333
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          2,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.64,
+        "robustness": 1.0,
+        "depth": 10,
+        "total_gates": 16,
+        "depth_score": 0.8,
+        "fitness": 0.888
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          3,
+          4,
+          1,
+          3
+        ],
+        "accuracy": 0.67,
+        "robustness": 0.9867330016583747,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.8860398009950249
+      },
+      {
+        "gene": [
+          4,
+          2,
+          1,
+          3,
+          4,
+          3,
+          1
+        ],
+        "accuracy": 0.49,
+        "robustness": 0.997732426303855,
+        "depth": 3,
+        "total_gates": 6,
+        "depth_score": 0.94,
+        "fitness": 0.884639455782313
+      },
+      {
+        "gene": [
+          3,
+          2,
+          3,
+          3,
+          3,
+          1,
+          1
+        ],
+        "accuracy": 0.49666666666666665,
+        "robustness": 0.993288590604027,
+        "depth": 3,
+        "total_gates": 5,
+        "depth_score": 0.94,
+        "fitness": 0.8833064876957495
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          1,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9844444444444446,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8826666666666667
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          4,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.67,
+        "robustness": 0.9436152570480927,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.8721691542288557
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          4,
+          2,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9174917491749175,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.8611617161716172
+      },
+      {
+        "gene": [
+          3,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.6933333333333334,
+        "robustness": 0.9198717948717948,
+        "depth": 10,
+        "total_gates": 16,
+        "depth_score": 0.8,
+        "fitness": 0.8505897435897436
+      }
+    ],
+    "Single-Obj Genetic": [
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9125925925925925,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.75
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          4,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9555555555555557,
+        "depth": 12,
+        "total_gates": 18,
+        "depth_score": 0.76,
+        "fitness": 0.75
+      },
+      {
+        "gene": [
+          3,
+          2,
+          4,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.7233333333333334,
+        "robustness": 0.9539170506912442,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.7233333333333334
+      },
+      {
+        "gene": [
+          3,
+          2,
+          4,
+          4,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.72,
+        "robustness": 0.9845679012345678,
+        "depth": 12,
+        "total_gates": 18,
+        "depth_score": 0.76,
+        "fitness": 0.72
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.7166666666666667,
+        "robustness": 0.9813953488372091,
+        "depth": 10,
+        "total_gates": 18,
+        "depth_score": 0.8,
+        "fitness": 0.7166666666666667
+      },
+      {
+        "gene": [
+          3,
+          2,
+          3,
+          4,
+          4,
+          3,
+          3
+        ],
+        "accuracy": 0.7,
+        "robustness": 1.0,
+        "depth": 12,
+        "total_gates": 19,
+        "depth_score": 0.76,
+        "fitness": 0.7
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          1,
+          3
+        ],
+        "accuracy": 0.7,
+        "robustness": 0.904761904761905,
+        "depth": 8,
+        "total_gates": 16,
+        "depth_score": 0.84,
+        "fitness": 0.7
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          2,
+          3,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9438943894389439,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.6733333333333333
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          4,
+          1,
+          3
+        ],
+        "accuracy": 0.6666666666666666,
+        "robustness": 0.9733333333333335,
+        "depth": 8,
+        "total_gates": 17,
+        "depth_score": 0.84,
+        "fitness": 0.6666666666666666
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          4,
+          4,
+          1,
+          3
+        ],
+        "accuracy": 0.6633333333333333,
+        "robustness": 1.0,
+        "depth": 10,
+        "total_gates": 18,
+        "depth_score": 0.8,
+        "fitness": 0.6633333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.967687074829932,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.6533333333333333
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9880952380952381,
+        "depth": 7,
+        "total_gates": 12,
+        "depth_score": 0.86,
+        "fitness": 0.6533333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          4,
+          3,
+          3,
+          2
+        ],
+        "accuracy": 0.6466666666666666,
+        "robustness": 0.9982817869415809,
+        "depth": 7,
+        "total_gates": 9,
+        "depth_score": 0.86,
+        "fitness": 0.6466666666666666
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          3,
+          2,
+          3,
+          2
+        ],
+        "accuracy": 0.6433333333333333,
+        "robustness": 0.9758203799654579,
+        "depth": 6,
+        "total_gates": 10,
+        "depth_score": 0.88,
+        "fitness": 0.6433333333333333
+      },
+      {
+        "gene": [
+          3,
+          2,
+          1,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.64,
+        "robustness": 0.9809027777777778,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.64
+      },
+      {
+        "gene": [
+          4,
+          2,
+          1,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6366666666666667,
+        "robustness": 0.9842931937172773,
+        "depth": 6,
+        "total_gates": 10,
+        "depth_score": 0.88,
+        "fitness": 0.6366666666666667
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          3,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9786096256684492,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          3,
+          1,
+          1,
+          3,
+          2,
+          3
+        ],
+        "accuracy": 0.6166666666666667,
+        "robustness": 1.0,
+        "depth": 7,
+        "total_gates": 14,
+        "depth_score": 0.86,
+        "fitness": 0.6166666666666667
+      },
+      {
+        "gene": [
+          4,
+          3,
+          3,
+          1,
+          3,
+          3,
+          2
+        ],
+        "accuracy": 0.61,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 11,
+        "depth_score": 0.9,
+        "fitness": 0.61
+      },
+      {
+        "gene": [
+          2,
+          3,
+          1,
+          1,
+          4,
+          1,
+          2
+        ],
+        "accuracy": 0.5633333333333334,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 7,
+        "depth_score": 0.92,
+        "fitness": 0.5633333333333334
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          4,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9733333333333333,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.5
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9733333333333333,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.5
+      },
+      {
+        "gene": [
+          3,
+          2,
+          3,
+          3,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.49666666666666665,
+        "robustness": 0.9977628635346757,
+        "depth": 3,
+        "total_gates": 5,
+        "depth_score": 0.94,
+        "fitness": 0.49666666666666665
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.49,
+        "robustness": 1.0,
+        "depth": 3,
+        "total_gates": 6,
+        "depth_score": 0.94,
+        "fitness": 0.49
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          1,
+          4,
+          2,
+          1
+        ],
+        "accuracy": 0.4866666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 5,
+        "depth_score": 0.96,
+        "fitness": 0.4866666666666667
+      }
+    ],
+    "Acc+Complexity Genetic": [
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.8281481481481481,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.7625
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          1,
+          3,
+          3
+        ],
+        "accuracy": 0.7433333333333333,
+        "robustness": 0.9506726457399104,
+        "depth": 9,
+        "total_gates": 16,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.7625
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          4,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9837037037037036,
+        "depth": 11,
+        "total_gates": 18,
+        "depth_score": 0.78,
+        "fitness": 0.7575000000000001
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          4,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.7033333333333334,
+        "robustness": 0.9557661927330172,
+        "depth": 8,
+        "total_gates": 14,
+        "depth_score": 0.84,
+        "fitness": 0.7375
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.9170653907496014,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.7374999999999999
+      },
+      {
+        "gene": [
+          4,
+          1,
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        "accuracy": 0.68,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 11,
+        "depth_score": 0.88,
+        "fitness": 0.73
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          4,
+          4,
+          3,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9910873440285207,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          2,
+          2,
+          4,
+          2
+        ],
+        "accuracy": 0.58,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 9,
+        "depth_score": 0.9,
+        "fitness": 0.6599999999999999
+      },
+      {
+        "gene": [
+          2,
+          3,
+          1,
+          1,
+          4,
+          1,
+          2
+        ],
+        "accuracy": 0.5633333333333334,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 7,
+        "depth_score": 0.92,
+        "fitness": 0.6525
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9822222222222221,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.615
+      },
+      {
+        "gene": [
+          3,
+          2,
+          1,
+          4,
+          1,
+          4,
+          1
+        ],
+        "accuracy": 0.49666666666666665,
+        "robustness": 1.0,
+        "depth": 3,
+        "total_gates": 5,
+        "depth_score": 0.94,
+        "fitness": 0.6074999999999999
+      },
+      {
+        "gene": [
+          1,
+          1,
+          2,
+          3,
+          3,
+          4,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.59
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          3,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.59
+      },
+      {
+        "gene": [
+          1,
+          1,
+          2,
+          3,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.59
+      }
+    ],
+    "Acc+Robustness Genetic": [
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          4,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9555555555555556,
+        "depth": 11,
+        "total_gates": 18,
+        "depth_score": 0.78,
+        "fitness": 0.8116666666666665
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9185185185185186,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.8005555555555555
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          2,
+          3
+        ],
+        "accuracy": 0.7266666666666667,
+        "robustness": 0.9709480122324159,
+        "depth": 9,
+        "total_gates": 16,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.7999510703363913
+      },
+      {
+        "gene": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          4,
+          3
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.974481658692185,
+        "depth": 13,
+        "total_gates": 21,
+        "depth_score": 0.74,
+        "fitness": 0.7800111642743222
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          3,
+          4,
+          1,
+          3
+        ],
+        "accuracy": 0.67,
+        "robustness": 0.998341625207297,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.7685024875621891
+      },
+      {
+        "gene": [
+          3,
+          2,
+          3,
+          3,
+          2,
+          2,
+          3
+        ],
+        "accuracy": 0.66,
+        "robustness": 0.9915824915824916,
+        "depth": 9,
+        "total_gates": 15,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.7594747474747474
+      },
+      {
+        "gene": [
+          4,
+          3,
+          4,
+          1,
+          3,
+          4,
+          3
+        ],
+        "accuracy": 0.6466666666666666,
+        "robustness": 1.0,
+        "depth": 10,
+        "total_gates": 19,
+        "depth_score": 0.8,
+        "fitness": 0.7526666666666666
+      },
+      {
+        "gene": [
+          3,
+          2,
+          2,
+          3,
+          1,
+          1,
+          3
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9727891156462585,
+        "depth": 7,
+        "total_gates": 12,
+        "depth_score": 0.86,
+        "fitness": 0.7491700680272109
+      },
+      {
+        "gene": [
+          4,
+          2,
+          2,
+          3,
+          2,
+          1,
+          3
+        ],
+        "accuracy": 0.6466666666666666,
+        "robustness": 0.9776632302405501,
+        "depth": 8,
+        "total_gates": 14,
+        "depth_score": 0.84,
+        "fitness": 0.7459656357388316
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          4,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9591836734693877,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.7450884353741496
+      },
+      {
+        "gene": [
+          3,
+          2,
+          1,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.64,
+        "robustness": 0.9809027777777778,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.7422708333333332
+      },
+      {
+        "gene": [
+          4,
+          3,
+          1,
+          1,
+          4,
+          2,
+          3
+        ],
+        "accuracy": 0.63,
+        "robustness": 1.0,
+        "depth": 7,
+        "total_gates": 15,
+        "depth_score": 0.86,
+        "fitness": 0.7409999999999999
+      },
+      {
+        "gene": [
+          4,
+          3,
+          3,
+          2,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.6166666666666667,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.7316666666666667
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          4,
+          4,
+          3,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9786096256684492,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.7299162210338681
+      },
+      {
+        "gene": [
+          3,
+          3,
+          2,
+          1,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9794007490636704,
+        "depth": 5,
+        "total_gates": 9,
+        "depth_score": 0.9,
+        "fitness": 0.7091535580524344
+      },
+      {
+        "gene": [
+          2,
+          3,
+          1,
+          2,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.5733333333333334,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.7013333333333334
+      },
+      {
+        "gene": [
+          2,
+          3,
+          1,
+          1,
+          4,
+          1,
+          2
+        ],
+        "accuracy": 0.5633333333333334,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 7,
+        "depth_score": 0.92,
+        "fitness": 0.6943333333333332
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          4,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.49,
+        "robustness": 1.0,
+        "depth": 3,
+        "total_gates": 6,
+        "depth_score": 0.94,
+        "fitness": 0.643
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          4,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9733333333333333,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.6419999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9733333333333333,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.6419999999999999
+      },
+      {
+        "gene": [
+          3,
+          2,
+          3,
+          3,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.49666666666666665,
+        "robustness": 0.9753914988814318,
+        "depth": 3,
+        "total_gates": 5,
+        "depth_score": 0.94,
+        "fitness": 0.6402841163310962
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          3,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.6266666666666667
+      },
+      {
+        "gene": [
+          1,
+          1,
+          2,
+          3,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.6266666666666667
+      },
+      {
+        "gene": [
+          1,
+          1,
+          3,
+          4,
+          4,
+          2,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.6266666666666667
+      }
+    ],
+    "Multi-Obj Genetic (Ours)": [
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          1,
+          1,
+          1,
+          2
+        ],
+        "accuracy": 0.6466666666666666,
+        "robustness": 0.9982817869415809,
+        "depth": 4,
+        "total_gates": 10,
+        "depth_score": 0.92,
+        "fitness": 0.9123024054982819
+      },
+      {
+        "gene": [
+          4,
+          3,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 9,
+        "depth_score": 0.92,
+        "fitness": 0.9086666666666667
+      },
+      {
+        "gene": [
+          4,
+          3,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.63,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 10,
+        "depth_score": 0.9,
+        "fitness": 0.906
+      },
+      {
+        "gene": [
+          4,
+          2,
+          1,
+          3,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.6366666666666667,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 10,
+        "depth_score": 0.88,
+        "fitness": 0.9033333333333334
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          4,
+          3,
+          3,
+          2
+        ],
+        "accuracy": 0.6466666666666666,
+        "robustness": 1.0,
+        "depth": 7,
+        "total_gates": 9,
+        "depth_score": 0.86,
+        "fitness": 0.9013333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          4,
+          1,
+          1,
+          3
+        ],
+        "accuracy": 0.6633333333333333,
+        "robustness": 0.9916247906197657,
+        "depth": 9,
+        "total_gates": 11,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.8916415410385261
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          2,
+          3,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9653465346534653,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.8898745874587459
+      },
+      {
+        "gene": [
+          4,
+          1,
+          2,
+          2,
+          1,
+          3,
+          1
+        ],
+        "accuracy": 0.4866666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 5,
+        "depth_score": 0.96,
+        "fitness": 0.8893333333333333
+      },
+      {
+        "gene": [
+          4,
+          1,
+          2,
+          3,
+          1,
+          3,
+          1
+        ],
+        "accuracy": 0.4866666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 5,
+        "depth_score": 0.96,
+        "fitness": 0.8893333333333333
+      },
+      {
+        "gene": [
+          3,
+          2,
+          3,
+          1,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.49666666666666665,
+        "robustness": 1.0,
+        "depth": 3,
+        "total_gates": 5,
+        "depth_score": 0.94,
+        "fitness": 0.8873333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          2,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9911111111111112,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8866666666666667
+      },
+      {
+        "gene": [
+          3,
+          2,
+          4,
+          3,
+          1,
+          3,
+          3
+        ],
+        "accuracy": 0.72,
+        "robustness": 0.9598765432098766,
+        "depth": 9,
+        "total_gates": 16,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.883925925925926
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.9027113237639555,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.8529601275917066
+      }
+    ]
+  },
+  "union_fronts": {
+    "Random Search": [
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          4,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.9046666666666667
+      },
+      {
+        "gene": [
+          4,
+          3,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9928698752228163,
+        "depth": 4,
+        "total_gates": 9,
+        "depth_score": 0.92,
+        "fitness": 0.9043885918003566
+      },
+      {
+        "gene": [
+          4,
+          2,
+          1,
+          3,
+          1,
+          1,
+          3
+        ],
+        "accuracy": 0.64,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.904
+      },
+      {
+        "gene": [
+          4,
+          1,
+          3,
+          1,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 9,
+        "depth_score": 0.92,
+        "fitness": 0.904
+      },
+      {
+        "gene": [
+          4,
+          1,
+          3,
+          3,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.68,
+        "robustness": 0.9771241830065358,
+        "depth": 6,
+        "total_gates": 11,
+        "depth_score": 0.88,
+        "fitness": 0.8982745098039215
+      },
+      {
+        "gene": [
+          4,
+          2,
+          2,
+          3,
+          4,
+          3,
+          2
+        ],
+        "accuracy": 0.6433333333333333,
+        "robustness": 0.9930915371329878,
+        "depth": 7,
+        "total_gates": 11,
+        "depth_score": 0.86,
+        "fitness": 0.8965215889464594
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          1,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.6466666666666666,
+        "robustness": 0.9690721649484536,
+        "depth": 4,
+        "total_gates": 10,
+        "depth_score": 0.92,
+        "fitness": 0.8947766323024055
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          3,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9778911564625852,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.8934013605442178
+      },
+      {
+        "gene": [
+          2,
+          3,
+          1,
+          2,
+          3,
+          3,
+          3
+        ],
+        "accuracy": 0.6566666666666666,
+        "robustness": 0.9949238578680204,
+        "depth": 9,
+        "total_gates": 14,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.8922876480541455
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          4,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8919999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8919999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          2,
+          4,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8919999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          4,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8919999999999999
+      },
+      {
+        "gene": [
+          2,
+          3,
+          3,
+          1,
+          4,
+          3,
+          2
+        ],
+        "accuracy": 0.64,
+        "robustness": 0.970486111111111,
+        "depth": 5,
+        "total_gates": 9,
+        "depth_score": 0.9,
+        "fitness": 0.8902916666666667
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          3,
+          4,
+          1,
+          3
+        ],
+        "accuracy": 0.67,
+        "robustness": 0.9867330016583747,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.8860398009950249
+      },
+      {
+        "gene": [
+          4,
+          3,
+          1,
+          3,
+          4,
+          3,
+          3
+        ],
+        "accuracy": 0.66,
+        "robustness": 0.978114478114478,
+        "depth": 9,
+        "total_gates": 18,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.8828686868686868
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          4,
+          3,
+          4,
+          3
+        ],
+        "accuracy": 0.6633333333333333,
+        "robustness": 0.9916247906197654,
+        "depth": 12,
+        "total_gates": 18,
+        "depth_score": 0.76,
+        "fitness": 0.879641541038526
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          4,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.7033333333333334,
+        "robustness": 0.9241706161137441,
+        "depth": 8,
+        "total_gates": 14,
+        "depth_score": 0.84,
+        "fitness": 0.8631690363349132
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          4,
+          2,
+          4,
+          3
+        ],
+        "accuracy": 0.7166666666666667,
+        "robustness": 0.8682170542635659,
+        "depth": 13,
+        "total_gates": 20,
+        "depth_score": 0.74,
+        "fitness": 0.8122635658914729
+      }
+    ],
+    "Single-Obj Genetic": [
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9125925925925925,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.75
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          4,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9555555555555557,
+        "depth": 12,
+        "total_gates": 18,
+        "depth_score": 0.76,
+        "fitness": 0.75
+      },
+      {
+        "gene": [
+          3,
+          2,
+          4,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.7233333333333334,
+        "robustness": 0.9539170506912442,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.7233333333333334
+      },
+      {
+        "gene": [
+          3,
+          2,
+          4,
+          4,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.72,
+        "robustness": 0.9845679012345678,
+        "depth": 12,
+        "total_gates": 18,
+        "depth_score": 0.76,
+        "fitness": 0.72
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.7166666666666667,
+        "robustness": 0.9813953488372091,
+        "depth": 10,
+        "total_gates": 18,
+        "depth_score": 0.8,
+        "fitness": 0.7166666666666667
+      },
+      {
+        "gene": [
+          3,
+          3,
+          2,
+          3,
+          4,
+          2,
+          3
+        ],
+        "accuracy": 0.71,
+        "robustness": 0.9233176838810642,
+        "depth": 9,
+        "total_gates": 17,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.71
+      },
+      {
+        "gene": [
+          3,
+          2,
+          3,
+          4,
+          4,
+          3,
+          3
+        ],
+        "accuracy": 0.7,
+        "robustness": 1.0,
+        "depth": 12,
+        "total_gates": 19,
+        "depth_score": 0.76,
+        "fitness": 0.7
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          1,
+          3
+        ],
+        "accuracy": 0.7,
+        "robustness": 0.904761904761905,
+        "depth": 8,
+        "total_gates": 16,
+        "depth_score": 0.84,
+        "fitness": 0.7
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          1,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.9728867623604465,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.6966666666666667
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          3,
+          4,
+          2,
+          3
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.9904306220095694,
+        "depth": 11,
+        "total_gates": 18,
+        "depth_score": 0.78,
+        "fitness": 0.6966666666666667
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          3,
+          1,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9950495049504949,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.6733333333333333
+      },
+      {
+        "gene": [
+          4,
+          3,
+          2,
+          3,
+          4,
+          3,
+          3
+        ],
+        "accuracy": 0.6666666666666666,
+        "robustness": 1.0,
+        "depth": 10,
+        "total_gates": 19,
+        "depth_score": 0.8,
+        "fitness": 0.6666666666666666
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          3,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.6533333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          4,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          4,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          3,
+          3,
+          1,
+          1,
+          4,
+          2,
+          2
+        ],
+        "accuracy": 0.6,
+        "robustness": 0.9925925925925926,
+        "depth": 4,
+        "total_gates": 8,
+        "depth_score": 0.92,
+        "fitness": 0.6
+      },
+      {
+        "gene": [
+          2,
+          3,
+          1,
+          1,
+          4,
+          1,
+          2
+        ],
+        "accuracy": 0.5633333333333334,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 7,
+        "depth_score": 0.92,
+        "fitness": 0.5633333333333334
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.5
+      }
+    ],
+    "Acc+Complexity Genetic": [
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.8281481481481481,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.7625
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          1,
+          3,
+          3
+        ],
+        "accuracy": 0.7433333333333333,
+        "robustness": 0.9506726457399104,
+        "depth": 9,
+        "total_gates": 16,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.7625
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          4,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9837037037037036,
+        "depth": 11,
+        "total_gates": 18,
+        "depth_score": 0.78,
+        "fitness": 0.7575000000000001
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          4,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.7033333333333334,
+        "robustness": 0.9557661927330172,
+        "depth": 8,
+        "total_gates": 14,
+        "depth_score": 0.84,
+        "fitness": 0.7375
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.9170653907496014,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.7374999999999999
+      },
+      {
+        "gene": [
+          4,
+          1,
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        "accuracy": 0.68,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 11,
+        "depth_score": 0.88,
+        "fitness": 0.73
+      },
+      {
+        "gene": [
+          4,
+          3,
+          2,
+          1,
+          3,
+          4,
+          2
+        ],
+        "accuracy": 0.63,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 10,
+        "depth_score": 0.9,
+        "fitness": 0.6975
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          1,
+          3,
+          4,
+          2
+        ],
+        "accuracy": 0.5666666666666667,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 7,
+        "depth_score": 0.92,
+        "fitness": 0.655
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          2,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.615
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.615
+      }
+    ],
+    "Acc+Robustness Genetic": [
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          4,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9555555555555556,
+        "depth": 11,
+        "total_gates": 18,
+        "depth_score": 0.78,
+        "fitness": 0.8116666666666665
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9185185185185186,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.8005555555555555
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          2,
+          3
+        ],
+        "accuracy": 0.7266666666666667,
+        "robustness": 0.9709480122324159,
+        "depth": 9,
+        "total_gates": 16,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.7999510703363913
+      },
+      {
+        "gene": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          4,
+          3
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.974481658692185,
+        "depth": 13,
+        "total_gates": 21,
+        "depth_score": 0.74,
+        "fitness": 0.7800111642743222
+      },
+      {
+        "gene": [
+          3,
+          3,
+          2,
+          4,
+          4,
+          1,
+          3
+        ],
+        "accuracy": 0.6833333333333333,
+        "robustness": 0.9983739837398374,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.7778455284552845
+      },
+      {
+        "gene": [
+          3,
+          3,
+          4,
+          4,
+          1,
+          3,
+          3
+        ],
+        "accuracy": 0.69,
+        "robustness": 0.9774557165861515,
+        "depth": 12,
+        "total_gates": 18,
+        "depth_score": 0.76,
+        "fitness": 0.7762367149758453
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          3,
+          2,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9834983498349834,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.7663828382838284
+      },
+      {
+        "gene": [
+          4,
+          3,
+          2,
+          4,
+          4,
+          4,
+          3
+        ],
+        "accuracy": 0.6633333333333333,
+        "robustness": 1.0,
+        "depth": 13,
+        "total_gates": 21,
+        "depth_score": 0.74,
+        "fitness": 0.7643333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          3,
+          2,
+          2,
+          3
+        ],
+        "accuracy": 0.6833333333333333,
+        "robustness": 0.9463414634146342,
+        "depth": 8,
+        "total_gates": 14,
+        "depth_score": 0.84,
+        "fitness": 0.7622357723577236
+      },
+      {
+        "gene": [
+          3,
+          2,
+          3,
+          3,
+          2,
+          2,
+          3
+        ],
+        "accuracy": 0.66,
+        "robustness": 0.9915824915824916,
+        "depth": 9,
+        "total_gates": 15,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.7594747474747474
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          4,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 1.0,
+        "depth": 8,
+        "total_gates": 13,
+        "depth_score": 0.84,
+        "fitness": 0.7573333333333333
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          4,
+          4,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 1.0,
+        "depth": 8,
+        "total_gates": 13,
+        "depth_score": 0.84,
+        "fitness": 0.7573333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          3,
+          1,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9931972789115647,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.7552925170068028
+      },
+      {
+        "gene": [
+          4,
+          2,
+          1,
+          3,
+          2,
+          1,
+          3
+        ],
+        "accuracy": 0.64,
+        "robustness": 1.0,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.748
+      },
+      {
+        "gene": [
+          4,
+          1,
+          2,
+          3,
+          1,
+          1,
+          3
+        ],
+        "accuracy": 0.64,
+        "robustness": 0.9965277777777776,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.7469583333333332
+      },
+      {
+        "gene": [
+          2,
+          3,
+          3,
+          1,
+          4,
+          3,
+          2
+        ],
+        "accuracy": 0.64,
+        "robustness": 0.9895833333333333,
+        "depth": 5,
+        "total_gates": 9,
+        "depth_score": 0.9,
+        "fitness": 0.744875
+      },
+      {
+        "gene": [
+          4,
+          1,
+          2,
+          3,
+          3,
+          1,
+          2
+        ],
+        "accuracy": 0.6333333333333333,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 10,
+        "depth_score": 0.88,
+        "fitness": 0.7433333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          4,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.7363333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          1,
+          1,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.7363333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          4,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.7363333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          3,
+          1,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.7363333333333333
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          1,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.6466666666666666,
+        "robustness": 0.9329896907216496,
+        "depth": 4,
+        "total_gates": 10,
+        "depth_score": 0.92,
+        "fitness": 0.7325635738831615
+      },
+      {
+        "gene": [
+          2,
+          3,
+          1,
+          1,
+          4,
+          1,
+          2
+        ],
+        "accuracy": 0.5633333333333334,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 7,
+        "depth_score": 0.92,
+        "fitness": 0.6943333333333332
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.6499999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.6499999999999999
+      }
+    ],
+    "Multi-Obj Genetic (Ours)": [
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          1,
+          1,
+          1,
+          2
+        ],
+        "accuracy": 0.6466666666666666,
+        "robustness": 0.9982817869415809,
+        "depth": 4,
+        "total_gates": 10,
+        "depth_score": 0.92,
+        "fitness": 0.9123024054982819
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.9106666666666667
+      },
+      {
+        "gene": [
+          4,
+          3,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 9,
+        "depth_score": 0.92,
+        "fitness": 0.9086666666666667
+      },
+      {
+        "gene": [
+          4,
+          3,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.63,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 10,
+        "depth_score": 0.9,
+        "fitness": 0.906
+      },
+      {
+        "gene": [
+          4,
+          3,
+          2,
+          1,
+          1,
+          1,
+          2
+        ],
+        "accuracy": 0.63,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 10,
+        "depth_score": 0.9,
+        "fitness": 0.906
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          3,
+          4,
+          2,
+          3
+        ],
+        "accuracy": 0.7233333333333334,
+        "robustness": 0.9877112135176652,
+        "depth": 8,
+        "total_gates": 16,
+        "depth_score": 0.84,
+        "fitness": 0.9052933947772659
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          4,
+          1,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8919999999999999
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.9027113237639555,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.8529601275917066
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          2,
+          3
+        ],
+        "accuracy": 0.74,
+        "robustness": 0.8093093093093093,
+        "depth": 9,
+        "total_gates": 17,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.7975855855855856
+      }
+    ]
+  },
+  "union_fronts_acc_rob": {
+    "Random Search": [
+      {
+        "gene": [
+          4,
+          2,
+          1,
+          3,
+          1,
+          1,
+          3
+        ],
+        "accuracy": 0.64,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.904
+      },
+      {
+        "gene": [
+          4,
+          1,
+          3,
+          3,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.68,
+        "robustness": 0.9771241830065358,
+        "depth": 6,
+        "total_gates": 11,
+        "depth_score": 0.88,
+        "fitness": 0.8982745098039215
+      },
+      {
+        "gene": [
+          2,
+          3,
+          1,
+          2,
+          3,
+          3,
+          3
+        ],
+        "accuracy": 0.6566666666666666,
+        "robustness": 0.9949238578680204,
+        "depth": 9,
+        "total_gates": 14,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.8922876480541455
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          2,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.64,
+        "robustness": 1.0,
+        "depth": 10,
+        "total_gates": 16,
+        "depth_score": 0.8,
+        "fitness": 0.888
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          3,
+          4,
+          1,
+          3
+        ],
+        "accuracy": 0.67,
+        "robustness": 0.9867330016583747,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.8860398009950249
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          4,
+          3,
+          4,
+          3
+        ],
+        "accuracy": 0.6633333333333333,
+        "robustness": 0.9916247906197654,
+        "depth": 12,
+        "total_gates": 18,
+        "depth_score": 0.76,
+        "fitness": 0.879641541038526
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          4,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.7033333333333334,
+        "robustness": 0.9241706161137441,
+        "depth": 8,
+        "total_gates": 14,
+        "depth_score": 0.84,
+        "fitness": 0.8631690363349132
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          4,
+          2,
+          4,
+          3
+        ],
+        "accuracy": 0.7166666666666667,
+        "robustness": 0.8682170542635659,
+        "depth": 13,
+        "total_gates": 20,
+        "depth_score": 0.74,
+        "fitness": 0.8122635658914729
+      }
+    ],
+    "Single-Obj Genetic": [
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          4,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9555555555555557,
+        "depth": 12,
+        "total_gates": 18,
+        "depth_score": 0.76,
+        "fitness": 0.75
+      },
+      {
+        "gene": [
+          3,
+          2,
+          4,
+          4,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.72,
+        "robustness": 0.9845679012345678,
+        "depth": 12,
+        "total_gates": 18,
+        "depth_score": 0.76,
+        "fitness": 0.72
+      },
+      {
+        "gene": [
+          3,
+          2,
+          3,
+          4,
+          4,
+          3,
+          3
+        ],
+        "accuracy": 0.7,
+        "robustness": 1.0,
+        "depth": 12,
+        "total_gates": 19,
+        "depth_score": 0.76,
+        "fitness": 0.7
+      }
+    ],
+    "Acc+Complexity Genetic": [
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          4,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9837037037037036,
+        "depth": 11,
+        "total_gates": 18,
+        "depth_score": 0.78,
+        "fitness": 0.7575000000000001
+      },
+      {
+        "gene": [
+          4,
+          1,
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        "accuracy": 0.68,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 11,
+        "depth_score": 0.88,
+        "fitness": 0.73
+      }
+    ],
+    "Acc+Robustness Genetic": [
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          4,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9555555555555556,
+        "depth": 11,
+        "total_gates": 18,
+        "depth_score": 0.78,
+        "fitness": 0.8116666666666665
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          2,
+          3
+        ],
+        "accuracy": 0.7266666666666667,
+        "robustness": 0.9709480122324159,
+        "depth": 9,
+        "total_gates": 16,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.7999510703363913
+      },
+      {
+        "gene": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          4,
+          3
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.974481658692185,
+        "depth": 13,
+        "total_gates": 21,
+        "depth_score": 0.74,
+        "fitness": 0.7800111642743222
+      },
+      {
+        "gene": [
+          3,
+          3,
+          2,
+          4,
+          4,
+          1,
+          3
+        ],
+        "accuracy": 0.6833333333333333,
+        "robustness": 0.9983739837398374,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.7778455284552845
+      },
+      {
+        "gene": [
+          3,
+          3,
+          4,
+          4,
+          1,
+          3,
+          3
+        ],
+        "accuracy": 0.69,
+        "robustness": 0.9774557165861515,
+        "depth": 12,
+        "total_gates": 18,
+        "depth_score": 0.76,
+        "fitness": 0.7762367149758453
+      },
+      {
+        "gene": [
+          4,
+          3,
+          2,
+          4,
+          4,
+          4,
+          3
+        ],
+        "accuracy": 0.6633333333333333,
+        "robustness": 1.0,
+        "depth": 13,
+        "total_gates": 21,
+        "depth_score": 0.74,
+        "fitness": 0.7643333333333333
+      }
+    ],
+    "Multi-Obj Genetic (Ours)": [
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.9106666666666667
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          3,
+          4,
+          2,
+          3
+        ],
+        "accuracy": 0.7233333333333334,
+        "robustness": 0.9877112135176652,
+        "depth": 8,
+        "total_gates": 16,
+        "depth_score": 0.84,
+        "fitness": 0.9052933947772659
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          2,
+          3
+        ],
+        "accuracy": 0.74,
+        "robustness": 0.8093093093093093,
+        "depth": 9,
+        "total_gates": 17,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.7975855855855856
+      }
+    ]
+  },
+  "union_fronts_acc_size": {
+    "Random Search": [
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          4,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.9046666666666667
+      },
+      {
+        "gene": [
+          4,
+          4,
+          4,
+          1,
+          3,
+          1,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9964349376114082,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.9025276292335117
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          3,
+          4,
+          3,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8986666666666667
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          2,
+          1,
+          3,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8986666666666667
+      },
+      {
+        "gene": [
+          4,
+          1,
+          3,
+          3,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.68,
+        "robustness": 0.9771241830065358,
+        "depth": 6,
+        "total_gates": 11,
+        "depth_score": 0.88,
+        "fitness": 0.8982745098039215
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          3,
+          4,
+          3,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.99438202247191,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8952958801498128
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          3,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9778911564625852,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.8934013605442178
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          4,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8919999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8919999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          2,
+          4,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8919999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          4,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8919999999999999
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          3,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9786096256684492,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.8918324420677363
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          4,
+          4,
+          2,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9868913857677901,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8908014981273408
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9768270944741534,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.8907629233511588
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          1,
+          1,
+          3,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9750445632798576,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.8896934046345812
+      },
+      {
+        "gene": [
+          3,
+          4,
+          4,
+          4,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9850187265917602,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8896779026217229
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          1,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9955555555555554,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8893333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          4,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9714795008912658,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.8875543672014262
+      },
+      {
+        "gene": [
+          3,
+          4,
+          1,
+          1,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9812734082397002,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8874307116104868
+      },
+      {
+        "gene": [
+          3,
+          4,
+          4,
+          4,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9794007490636701,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8863071161048688
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9659863945578231,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.8862585034013606
+      },
+      {
+        "gene": [
+          1,
+          1,
+          1,
+          4,
+          3,
+          1,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.8853333333333333
+      },
+      {
+        "gene": [
+          1,
+          1,
+          3,
+          3,
+          3,
+          1,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.8853333333333333
+      },
+      {
+        "gene": [
+          1,
+          1,
+          1,
+          3,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.8853333333333333
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          4,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9775280898876403,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8851835205992509
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          4,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9775280898876403,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8851835205992509
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          2,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.966131907308378,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.8843458110516935
+      },
+      {
+        "gene": [
+          2,
+          2,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "accuracy": 0.5433333333333333,
+        "robustness": 0.9856850715746419,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.8840777096114518
+      },
+      {
+        "gene": [
+          1,
+          2,
+          3,
+          3,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 1.0,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.8839999999999999
+      },
+      {
+        "gene": [
+          1,
+          2,
+          2,
+          3,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 1.0,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.8839999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          4,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9866666666666667,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8839999999999999
+      },
+      {
+        "gene": [
+          1,
+          2,
+          4,
+          2,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 1.0,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.8839999999999999
+      },
+      {
+        "gene": [
+          4,
+          4,
+          4,
+          2,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9643493761140819,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.8832762923351158
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          1,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9844444444444446,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8826666666666667
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          2,
+          1,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9844444444444446,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8826666666666667
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          4,
+          4,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9625668449197862,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.8822067736185384
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          4,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9591836734693877,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.8821768707482993
+      },
+      {
+        "gene": [
+          1,
+          2,
+          2,
+          3,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9953703703703705,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.8812222222222221
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9904761904761905,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.8796190476190477
+      },
+      {
+        "gene": [
+          1,
+          2,
+          2,
+          2,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9907407407407408,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.8784444444444444
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          3,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9755555555555556,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8773333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          3,
+          1,
+          4,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9755555555555556,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8773333333333333
+      },
+      {
+        "gene": [
+          1,
+          2,
+          4,
+          2,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9884259259259259,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.8770555555555555
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          4,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9733333333333333,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8759999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9733333333333333,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.8759999999999999
+      },
+      {
+        "gene": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.5166666666666667,
+        "robustness": 0.9720430107526881,
+        "depth": 4,
+        "total_gates": 5,
+        "depth_score": 0.92,
+        "fitness": 0.8705591397849463
+      },
+      {
+        "gene": [
+          1,
+          2,
+          4,
+          1,
+          4,
+          2,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9675925925925928,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.8645555555555555
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          4,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.7033333333333334,
+        "robustness": 0.9241706161137441,
+        "depth": 8,
+        "total_gates": 14,
+        "depth_score": 0.84,
+        "fitness": 0.8631690363349132
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          4,
+          2,
+          4,
+          3
+        ],
+        "accuracy": 0.7166666666666667,
+        "robustness": 0.8682170542635659,
+        "depth": 13,
+        "total_gates": 20,
+        "depth_score": 0.74,
+        "fitness": 0.8122635658914729
+      }
+    ],
+    "Single-Obj Genetic": [
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9125925925925925,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.75
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          1,
+          3
+        ],
+        "accuracy": 0.7,
+        "robustness": 0.904761904761905,
+        "depth": 8,
+        "total_gates": 16,
+        "depth_score": 0.84,
+        "fitness": 0.7
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          4,
+          1,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.8963317384370016,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.6966666666666667
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          1,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.9728867623604465,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.6966666666666667
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          4,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.94896331738437,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.6966666666666667
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          4,
+          4,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.8740031897926636,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.6966666666666667
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          3,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.7719298245614036,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.6966666666666667
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          3,
+          4,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.937799043062201,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.6966666666666667
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          4,
+          3,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.9585326953748006,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.6966666666666667
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          2,
+          3,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9438943894389439,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.6733333333333333
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          3,
+          1,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9950495049504949,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.6733333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          4,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9591836734693877,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.6533333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.967687074829932,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.6533333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          3,
+          1,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9931972789115647,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.6533333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9608843537414966,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.6533333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          4,
+          3,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9880952380952381,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.6533333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          3,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.6533333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          2,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.966131907308378,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          3,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9786096256684492,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9768270944741534,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          3,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9786096256684492,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          4,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          4,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9857397504456329,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          4,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9750445632798574,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          3,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.950089126559715,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9964349376114082,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          3,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9518716577540108,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          3,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9447415329768272,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          4,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9714795008912658,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          4,
+          4,
+          4,
+          3,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9786096256684492,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6233333333333333
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          4,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9775280898876403,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.5933333333333334
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          1,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.5933333333333334
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9775280898876403,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.5933333333333334
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9756554307116104,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.5933333333333334
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.99438202247191,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.5933333333333334
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          4,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9925093632958801,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.5933333333333334
+      },
+      {
+        "gene": [
+          3,
+          3,
+          1,
+          4,
+          1,
+          4,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 0.970276008492569,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.5233333333333333
+      },
+      {
+        "gene": [
+          3,
+          3,
+          4,
+          1,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 0.951167728237792,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.5233333333333333
+      },
+      {
+        "gene": [
+          3,
+          3,
+          3,
+          4,
+          1,
+          4,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.5233333333333333
+      },
+      {
+        "gene": [
+          3,
+          3,
+          1,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 0.9490445859872612,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.5233333333333333
+      },
+      {
+        "gene": [
+          3,
+          3,
+          2,
+          4,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.5233333333333333
+      },
+      {
+        "gene": [
+          3,
+          3,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.5233333333333333
+      },
+      {
+        "gene": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.5233333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          4,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9733333333333333,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.5
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9733333333333333,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.5
+      },
+      {
+        "gene": [
+          3,
+          1,
+          4,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9866666666666667,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.5
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.5
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9377777777777778,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.5
+      },
+      {
+        "gene": [
+          1,
+          2,
+          4,
+          2,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 1.0,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.48
+      },
+      {
+        "gene": [
+          1,
+          2,
+          4,
+          2,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9976851851851851,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.48
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9904761904761905,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.4666666666666667
+      },
+      {
+        "gene": [
+          1,
+          1,
+          2,
+          3,
+          3,
+          4,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.4666666666666667
+      },
+      {
+        "gene": [
+          1,
+          1,
+          1,
+          4,
+          3,
+          1,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9976190476190476,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.4666666666666667
+      },
+      {
+        "gene": [
+          1,
+          1,
+          2,
+          3,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.980952380952381,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.4666666666666667
+      },
+      {
+        "gene": [
+          1,
+          1,
+          3,
+          3,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9952380952380953,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.4666666666666667
+      },
+      {
+        "gene": [
+          1,
+          1,
+          1,
+          3,
+          4,
+          3,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9904761904761905,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.4666666666666667
+      },
+      {
+        "gene": [
+          1,
+          1,
+          3,
+          4,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9928571428571429,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.4666666666666667
+      },
+      {
+        "gene": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9999999999999999,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.4666666666666667
+      }
+    ],
+    "Acc+Complexity Genetic": [
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.8281481481481481,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.7625
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          1,
+          3,
+          3
+        ],
+        "accuracy": 0.7433333333333333,
+        "robustness": 0.9506726457399104,
+        "depth": 9,
+        "total_gates": 16,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.7625
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          4,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.7033333333333334,
+        "robustness": 0.8878357030015798,
+        "depth": 8,
+        "total_gates": 14,
+        "depth_score": 0.84,
+        "fitness": 0.7375
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          4,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.7033333333333334,
+        "robustness": 0.9557661927330172,
+        "depth": 8,
+        "total_gates": 14,
+        "depth_score": 0.84,
+        "fitness": 0.7375
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.9170653907496014,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.7374999999999999
+      },
+      {
+        "gene": [
+          4,
+          1,
+          3,
+          3,
+          2,
+          4,
+          2
+        ],
+        "accuracy": 0.68,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 11,
+        "depth_score": 0.88,
+        "fitness": 0.73
+      },
+      {
+        "gene": [
+          4,
+          1,
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.68,
+        "robustness": 0.9575163398692811,
+        "depth": 6,
+        "total_gates": 11,
+        "depth_score": 0.88,
+        "fitness": 0.73
+      },
+      {
+        "gene": [
+          4,
+          1,
+          3,
+          3,
+          2,
+          3,
+          2
+        ],
+        "accuracy": 0.68,
+        "robustness": 0.9738562091503268,
+        "depth": 6,
+        "total_gates": 11,
+        "depth_score": 0.88,
+        "fitness": 0.73
+      },
+      {
+        "gene": [
+          4,
+          1,
+          3,
+          3,
+          2,
+          1,
+          2
+        ],
+        "accuracy": 0.68,
+        "robustness": 0.9852941176470587,
+        "depth": 6,
+        "total_gates": 11,
+        "depth_score": 0.88,
+        "fitness": 0.73
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          4,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9591836734693877,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.71
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          3,
+          1,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9744897959183675,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.71
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          3,
+          4,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.979591836734694,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.71
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9659863945578231,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.71
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          4,
+          4,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9914965986394558,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.71
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          3,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9659863945578231,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.71
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          1,
+          4,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.979591836734694,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.71
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          2,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.966131907308378,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9857397504456329,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          4,
+          4,
+          3,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9910873440285207,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9768270944741534,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          3,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9786096256684492,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          4,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          3,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9590017825311945,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9964349376114082,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          1,
+          1,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9786096256684492,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9875222816399287,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9518716577540108,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          3,
+          4,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9821746880570409,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          3,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9554367201426025,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          2,
+          3,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9447415329768272,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          1,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9714795008912656,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9679144385026739,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          1,
+          4,
+          4,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9607843137254903,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          4,
+          4,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9821746880570412,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          1,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9982174688057042,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          2,
+          4,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9714795008912658,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          4,
+          4,
+          3,
+          2,
+          3,
+          4,
+          1
+        ],
+        "accuracy": 0.6233333333333333,
+        "robustness": 0.9590017825311942,
+        "depth": 5,
+        "total_gates": 8,
+        "depth_score": 0.9,
+        "fitness": 0.6925
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          4,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9775280898876403,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.67
+      },
+      {
+        "gene": [
+          3,
+          4,
+          1,
+          1,
+          4,
+          1,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9831460674157303,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.67
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          4,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.67
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          2,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9925093632958801,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.67
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9887640449438203,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.67
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          3,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9794007490636704,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.67
+      },
+      {
+        "gene": [
+          2,
+          2,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "accuracy": 0.5433333333333333,
+        "robustness": 0.9693251533742332,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.6375
+      },
+      {
+        "gene": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.5166666666666667,
+        "robustness": 0.9935483870967741,
+        "depth": 4,
+        "total_gates": 5,
+        "depth_score": 0.92,
+        "fitness": 0.6175
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          4,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9733333333333333,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.615
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9733333333333333,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.615
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9822222222222221,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.615
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          4,
+          1,
+          4,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9977777777777778,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.615
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          2,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.615
+      },
+      {
+        "gene": [
+          3,
+          1,
+          4,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9866666666666667,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.615
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.615
+      },
+      {
+        "gene": [
+          1,
+          2,
+          1,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9907407407407408,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.595
+      },
+      {
+        "gene": [
+          1,
+          2,
+          4,
+          2,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9837962962962964,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.595
+      },
+      {
+        "gene": [
+          1,
+          2,
+          4,
+          3,
+          1,
+          3,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9976851851851851,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.595
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9904761904761905,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.59
+      },
+      {
+        "gene": [
+          1,
+          1,
+          2,
+          3,
+          3,
+          4,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.59
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          3,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.59
+      },
+      {
+        "gene": [
+          1,
+          1,
+          2,
+          3,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.59
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          2,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9761904761904762,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.59
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          2,
+          4,
+          2,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9928571428571428,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.59
+      },
+      {
+        "gene": [
+          1,
+          1,
+          3,
+          1,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9904761904761905,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.59
+      },
+      {
+        "gene": [
+          1,
+          1,
+          3,
+          2,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9976190476190475,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.59
+      }
+    ],
+    "Acc+Robustness Genetic": [
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        "accuracy": 0.75,
+        "robustness": 0.9185185185185186,
+        "depth": 10,
+        "total_gates": 17,
+        "depth_score": 0.8,
+        "fitness": 0.8005555555555555
+      },
+      {
+        "gene": [
+          4,
+          2,
+          3,
+          3,
+          2,
+          2,
+          3
+        ],
+        "accuracy": 0.7266666666666667,
+        "robustness": 0.9709480122324159,
+        "depth": 9,
+        "total_gates": 16,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.7999510703363913
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          3,
+          2,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9834983498349834,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.7663828382838284
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          3,
+          2,
+          2,
+          3
+        ],
+        "accuracy": 0.6833333333333333,
+        "robustness": 0.9463414634146342,
+        "depth": 8,
+        "total_gates": 14,
+        "depth_score": 0.84,
+        "fitness": 0.7622357723577236
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          3,
+          1,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9931972789115647,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.7552925170068028
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9829931972789117,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.7522312925170068
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          3,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.979591836734694,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.7512108843537415
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9659863945578231,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.7471292517006802
+      },
+      {
+        "gene": [
+          4,
+          1,
+          3,
+          4,
+          1,
+          4,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9141914191419142,
+        "depth": 7,
+        "total_gates": 12,
+        "depth_score": 0.86,
+        "fitness": 0.7455907590759075
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          4,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9591836734693877,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.7450884353741496
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          3,
+          3,
+          2,
+          2
+        ],
+        "accuracy": 0.65,
+        "robustness": 0.9606837606837605,
+        "depth": 6,
+        "total_gates": 8,
+        "depth_score": 0.88,
+        "fitness": 0.7432051282051281
+      },
+      {
+        "gene": [
+          3,
+          4,
+          1,
+          3,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.7153333333333334
+      },
+      {
+        "gene": [
+          3,
+          4,
+          4,
+          2,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9962546816479401,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.7142097378277154
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          4,
+          1,
+          4,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9925093632958801,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.7130861423220973
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          2,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9925093632958801,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.7130861423220973
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9906367041198503,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.7125243445692884
+      },
+      {
+        "gene": [
+          3,
+          4,
+          4,
+          4,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9794007490636701,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.7091535580524344
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          4,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9775280898876403,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.7085917602996255
+      },
+      {
+        "gene": [
+          3,
+          4,
+          2,
+          4,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9775280898876403,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.7085917602996255
+      },
+      {
+        "gene": [
+          3,
+          3,
+          1,
+          4,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.6663333333333332
+      },
+      {
+        "gene": [
+          3,
+          3,
+          2,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.6663333333333332
+      },
+      {
+        "gene": [
+          3,
+          3,
+          2,
+          4,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.6663333333333332
+      },
+      {
+        "gene": [
+          3,
+          3,
+          4,
+          4,
+          1,
+          3,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 1.0,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.6663333333333332
+      },
+      {
+        "gene": [
+          3,
+          3,
+          1,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 0.9893842887473461,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.6631486199575372
+      },
+      {
+        "gene": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.5166666666666667,
+        "robustness": 0.9935483870967741,
+        "depth": 4,
+        "total_gates": 5,
+        "depth_score": 0.92,
+        "fitness": 0.6597311827956989
+      },
+      {
+        "gene": [
+          3,
+          3,
+          1,
+          4,
+          1,
+          4,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 0.970276008492569,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.6574161358811039
+      },
+      {
+        "gene": [
+          3,
+          3,
+          4,
+          1,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.5233333333333333,
+        "robustness": 0.951167728237792,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.6516836518046709
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.6499999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.6499999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          4,
+          3,
+          2,
+          2,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9866666666666667,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.6459999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          3,
+          1,
+          4,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9844444444444443,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.6453333333333333
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          4,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9733333333333333,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.6419999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          4,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.9733333333333333,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.6419999999999999
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          4,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.5,
+        "robustness": 0.971111111111111,
+        "depth": 2,
+        "total_gates": 4,
+        "depth_score": 0.96,
+        "fitness": 0.6413333333333333
+      },
+      {
+        "gene": [
+          1,
+          2,
+          3,
+          2,
+          3,
+          4,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 1.0,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.6359999999999999
+      },
+      {
+        "gene": [
+          1,
+          2,
+          3,
+          4,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 1.0,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.6359999999999999
+      },
+      {
+        "gene": [
+          1,
+          2,
+          4,
+          2,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9837962962962964,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.6311388888888889
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          3,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.6266666666666667
+      },
+      {
+        "gene": [
+          1,
+          1,
+          2,
+          3,
+          2,
+          3,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.6266666666666667
+      },
+      {
+        "gene": [
+          1,
+          1,
+          3,
+          4,
+          4,
+          2,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.6266666666666667
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9904761904761905,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.6238095238095238
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          1,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9666666666666668,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.6166666666666667
+      }
+    ],
+    "Multi-Obj Genetic (Ours)": [
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 1.0,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.9106666666666667
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          4,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9982993197278912,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.9056462585034014
+      },
+      {
+        "gene": [
+          3,
+          1,
+          3,
+          3,
+          4,
+          2,
+          3
+        ],
+        "accuracy": 0.7233333333333334,
+        "robustness": 0.9877112135176652,
+        "depth": 8,
+        "total_gates": 16,
+        "depth_score": 0.84,
+        "fitness": 0.9052933947772659
+      },
+      {
+        "gene": [
+          3,
+          1,
+          2,
+          3,
+          2,
+          2,
+          2
+        ],
+        "accuracy": 0.6533333333333333,
+        "robustness": 0.9948979591836735,
+        "depth": 6,
+        "total_gates": 9,
+        "depth_score": 0.88,
+        "fitness": 0.9036054421768709
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          4,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8986666666666667
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          2,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 1.0,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8986666666666667
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          3,
+          3,
+          1,
+          2
+        ],
+        "accuracy": 0.65,
+        "robustness": 0.9863247863247863,
+        "depth": 6,
+        "total_gates": 8,
+        "depth_score": 0.88,
+        "fitness": 0.8977948717948718
+      },
+      {
+        "gene": [
+          3,
+          4,
+          3,
+          1,
+          1,
+          3,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9981273408239701,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8975430711610488
+      },
+      {
+        "gene": [
+          3,
+          4,
+          4,
+          4,
+          1,
+          3,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9962546816479398,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8964194756554307
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          4,
+          1,
+          1,
+          3
+        ],
+        "accuracy": 0.6633333333333333,
+        "robustness": 0.9916247906197657,
+        "depth": 9,
+        "total_gates": 11,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.8916415410385261
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          2,
+          3,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9653465346534653,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.8898745874587459
+      },
+      {
+        "gene": [
+          3,
+          1,
+          1,
+          1,
+          4,
+          2,
+          2
+        ],
+        "accuracy": 0.56,
+        "robustness": 0.9841269841269841,
+        "depth": 4,
+        "total_gates": 6,
+        "depth_score": 0.92,
+        "fitness": 0.8864761904761904
+      },
+      {
+        "gene": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.8853333333333333
+      },
+      {
+        "gene": [
+          1,
+          1,
+          2,
+          2,
+          4,
+          3,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.8853333333333333
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          3,
+          1,
+          4,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9999999999999999,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.8853333333333333
+      },
+      {
+        "gene": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 1.0,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.8853333333333333
+      },
+      {
+        "gene": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 1.0,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.8839999999999999
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          3,
+          2,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9521452145214521,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.881953795379538
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          2,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9928571428571428,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.8810476190476191
+      },
+      {
+        "gene": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.5166666666666667,
+        "robustness": 0.9870967741935484,
+        "depth": 4,
+        "total_gates": 5,
+        "depth_score": 0.92,
+        "fitness": 0.8795913978494624
+      },
+      {
+        "gene": [
+          3,
+          4,
+          1,
+          3,
+          4,
+          4,
+          1
+        ],
+        "accuracy": 0.5933333333333334,
+        "robustness": 0.9681647940074906,
+        "depth": 5,
+        "total_gates": 7,
+        "depth_score": 0.9,
+        "fitness": 0.8795655430711611
+      },
+      {
+        "gene": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9907407407407408,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.8784444444444444
+      },
+      {
+        "gene": [
+          1,
+          2,
+          4,
+          2,
+          3,
+          2,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9884259259259259,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.8770555555555555
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9438943894389439,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.877003300330033
+      },
+      {
+        "gene": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "accuracy": 0.5033333333333333,
+        "robustness": 0.9867549668874173,
+        "depth": 4,
+        "total_gates": 4,
+        "depth_score": 0.92,
+        "fitness": 0.8767196467991171
+      },
+      {
+        "gene": [
+          1,
+          2,
+          1,
+          1,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9837962962962962,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.8742777777777777
+      },
+      {
+        "gene": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          4,
+          1
+        ],
+        "accuracy": 0.48,
+        "robustness": 0.9791666666666667,
+        "depth": 3,
+        "total_gates": 3,
+        "depth_score": 0.94,
+        "fitness": 0.8714999999999999
+      },
+      {
+        "gene": [
+          4,
+          1,
+          4,
+          3,
+          1,
+          2,
+          2
+        ],
+        "accuracy": 0.6733333333333333,
+        "robustness": 0.9240924092409241,
+        "depth": 6,
+        "total_gates": 12,
+        "depth_score": 0.88,
+        "fitness": 0.8651221122112212
+      },
+      {
+        "gene": [
+          1,
+          1,
+          3,
+          1,
+          3,
+          3,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.9619047619047619,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.8624761904761906
+      },
+      {
+        "gene": [
+          1,
+          1,
+          4,
+          3,
+          1,
+          1,
+          1
+        ],
+        "accuracy": 0.4666666666666667,
+        "robustness": 0.957142857142857,
+        "depth": 2,
+        "total_gates": 2,
+        "depth_score": 0.96,
+        "fitness": 0.8596190476190475
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          1,
+          3,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.9027113237639555,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.8529601275917066
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          4,
+          3,
+          4,
+          2
+        ],
+        "accuracy": 0.7033333333333334,
+        "robustness": 0.90521327014218,
+        "depth": 8,
+        "total_gates": 14,
+        "depth_score": 0.84,
+        "fitness": 0.8517946287519748
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          3,
+          2
+        ],
+        "accuracy": 0.6966666666666667,
+        "robustness": 0.878787878787879,
+        "depth": 7,
+        "total_gates": 13,
+        "depth_score": 0.86,
+        "fitness": 0.8386060606060607
+      },
+      {
+        "gene": [
+          4,
+          2,
+          4,
+          3,
+          2,
+          2,
+          3
+        ],
+        "accuracy": 0.74,
+        "robustness": 0.8093093093093093,
+        "depth": 9,
+        "total_gates": 17,
+        "depth_score": 0.8200000000000001,
+        "fitness": 0.7975855855855856
+      }
+    ]
+  },
+  "union_all_counts": {
+    "Random Search": 323,
+    "Single-Obj Genetic": 317,
+    "Acc+Complexity Genetic": 320,
+    "Acc+Robustness Genetic": 319,
+    "Multi-Obj Genetic (Ours)": 288
+  },
+  "metric_definition": {
+    "best_fitness": "common_joint_score=0.2*acc+0.6*robust+0.2*depth_score",
+    "search_auc": "AUC of best-so-far common_joint_score over unique evals",
+    "non_dominated_count": "size of Pareto front in (accuracy, robustness, depth)",
+    "hypervolume": "Monte-Carlo hypervolume in normalized 3D objective space"
+  },
+  "canonical_best": {
+    "Random Search": {
+      "gene": [
+        4,
+        3,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "accuracy": 0.6233333333333333,
+      "robustness": 0.9928698752228163,
+      "depth": 4,
+      "total_gates": 9,
+      "depth_score": 0.92,
+      "fitness": 0.9043885918003566
+    },
+    "Single-Obj Genetic": {
+      "gene": [
+        4,
+        3,
+        3,
+        1,
+        3,
+        3,
+        2
+      ],
+      "accuracy": 0.61,
+      "robustness": 1.0,
+      "depth": 5,
+      "total_gates": 11,
+      "depth_score": 0.9,
+      "fitness": 0.61
+    },
+    "Acc+Complexity Genetic": {
+      "gene": [
+        4,
+        1,
+        3,
+        3,
+        2,
+        4,
+        2
+      ],
+      "accuracy": 0.68,
+      "robustness": 1.0,
+      "depth": 6,
+      "total_gates": 11,
+      "depth_score": 0.88,
+      "fitness": 0.73
+    },
+    "Acc+Robustness Genetic": {
+      "gene": [
+        4,
+        3,
+        3,
+        2,
+        1,
+        2,
+        2
+      ],
+      "accuracy": 0.6166666666666667,
+      "robustness": 1.0,
+      "depth": 6,
+      "total_gates": 12,
+      "depth_score": 0.88,
+      "fitness": 0.7316666666666667
+    },
+    "Multi-Obj Genetic (Ours)": {
+      "gene": [
+        4,
+        1,
+        4,
+        1,
+        1,
+        1,
+        2
+      ],
+      "accuracy": 0.6466666666666666,
+      "robustness": 0.9982817869415809,
+      "depth": 4,
+      "total_gates": 10,
+      "depth_score": 0.92,
+      "fitness": 0.9123024054982819
+    }
+  }
+}
